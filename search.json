@@ -2,9 +2,19 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Data Science in Focus",
+    "title": "Data Science In Focus",
     "section": "",
-    "text": "Data Science In Focus\n\nRefining Practice, Deepening Understanding\nData Science In Focus is a reflective essay series on data science as a scientific discipline—what it is, how it’s practiced, and what it has become. As the field matures beyond its early hype cycles and into a coherent form of applied research, this series aims to sharpen our collective understanding of the work itself.\nWhere Fundamentals of Data Science laid the groundwork for a newly forming field, these essays revisit core questions with the benefit of hindsight:\n- What does it mean to practice data science as science?\n- How should teams, tools, and systems support inquiry over output?\n- What kind of knowledge does data science produce—and for whom?\nRooted in the scientific method, structured around the research lifecycle, and steeped in the evolving norms of modern tech orgs, this series puts the discipline itself into focus.",
+    "text": "Introduction",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data Science In Focus</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#refining-practice-deepening-understanding",
+    "href": "index.html#refining-practice-deepening-understanding",
+    "title": "Data Science In Focus",
+    "section": "Refining Practice, Deepening Understanding",
+    "text": "Refining Practice, Deepening Understanding\nData Science In Focus is a reflective essay series on data science as a scientific discipline—what it is, how it’s practiced, and what it has become. As the field matures beyond its early hype cycles and into a coherent form of applied research, this series aims to sharpen our collective understanding of the work itself.\nWhere Fundamentals of Data Science laid the groundwork for a newly forming field, these essays revisit core questions with the benefit of hindsight:\n- What does it mean to practice data science as science?\n- How should teams, tools, and systems support inquiry over output?\n- What kind of knowledge does data science produce—and for whom?\nRooted in the scientific method, structured around the research lifecycle, and steeped in the evolving norms of modern tech orgs, this series puts the discipline itself into focus.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data Science In Focus</span>"
     ]
@@ -12,143 +22,143 @@
   {
     "objectID": "chapters/what-is-data-science.html",
     "href": "chapters/what-is-data-science.html",
-    "title": "2  What Is Data Science",
+    "title": "What Is Data Science",
     "section": "",
     "text": "(Full draft previously provided. You may replace the placeholder with the detailed version.)",
     "crumbs": [
-      "Framing and Foundations",
+      "**Defining Data Science**",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>What Is Data Science</span>"
     ]
   },
   {
     "objectID": "chapters/history-of-data-science.html",
     "href": "chapters/history-of-data-science.html",
-    "title": "3  A Brief History of Data Science",
+    "title": "A Brief History of Data Science",
     "section": "",
     "text": "Data science didn’t emerge from a single lineage—it was born from a convergence. Statistics, scientific computing, database management, and machine learning all played formative roles in shaping the field. During the early 2000s, as computational infrastructure and open-source tools proliferated, organizations began to realize that “data” wasn’t just a byproduct of digital systems—it was a source of insight.\nThe rise of the “data scientist” as a role came partly from pragmatism: organizations needed generalists who could both analyze and code. But this era was also defined by confusion. Data science became a catch-all title encompassing analysts, engineers, ML researchers, and more. The result was a temporary inflation of the field—a golden age of generalists with ambiguous scope.\nNow, a decade later, the landscape is maturing. Specialized engineering roles have splintered off. Machine learning engineering, analytics engineering, and decision science have defined clearer scopes. What remains in the heart of “data science” is its original essence: a scientific discipline grounded in inquiry, system behavior, and the pursuit of explanatory knowledge.",
     "crumbs": [
-      "Framing and Foundations",
+      "**Defining Data Science**",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>A Brief History of Data Science</span>"
     ]
   },
   {
     "objectID": "chapters/data-science-in-orgs.html",
     "href": "chapters/data-science-in-orgs.html",
-    "title": "4  Where Data Science Fits in Technology Organizations",
+    "title": "Where Data Science Fits in Technology Organizations",
     "section": "",
     "text": "Data science occupies a unique niche within technology orgs. It bridges engineering, product, and strategy—but it is fundamentally distinct from all three. Its core deliverable is understanding, not execution.\nThe organizational structure of data science varies:\n- Centralized teams emphasize consistency and shared standards.\n- Embedded models prioritize domain intimacy and responsiveness.\n- Hybrid approaches attempt to balance autonomy and alignment.\nTensions often arise when data science is treated as a service function, expected to deliver dashboards or one-off analyses on demand. But a scientific function thrives on longer-term research questions, context-rich collaboration, and space to explore uncertainty. Successful teams recognize this and give data scientists both embedded partnerships and protected research capacity.\nThe most effective data science orgs invest in career ladders, program-based workstreams, and a clear cultural distinction between scientists and engineers—while encouraging tight collaboration across them.",
     "crumbs": [
-      "Framing and Foundations",
+      "**Defining Data Science**",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Where Data Science Fits in Technology Organizations</span>"
     ]
   },
   {
     "objectID": "chapters/applied-systems-science.html",
     "href": "chapters/applied-systems-science.html",
-    "title": "5  Data Science as Applied Systems Science",
+    "title": "Data Science as Applied Systems Science",
     "section": "",
     "text": "At its core, data science is the study of complex, adaptive systems. These systems—markets, platforms, recommendation engines, networks—are not static. They evolve, respond to feedback, and often exhibit emergent behavior.\nTo understand such systems, data scientists borrow heavily from adjacent fields:\n- Control theory to manage dynamic processes\n- Cybernetics to study feedback loops\n- Complexity science to model emergence\n- Information theory to reason about signal and noise\nThis systems-thinking mindset distinguishes data science from business analytics or product instrumentation. It frames metrics as proxies, not truths. It treats models as lenses, not deliverables. And it embraces the recursive nature of systems—where measurement affects behavior, and knowledge must continually update in response.",
     "crumbs": [
-      "Framing and Foundations",
+      "**Defining Data Science**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Science as Applied Systems Science</span>"
     ]
   },
   {
     "objectID": "chapters/venn-diagram.html",
     "href": "chapters/venn-diagram.html",
-    "title": "6  A Refined Venn Diagram of Data Science",
+    "title": "A Refined Venn Diagram of Data Science",
     "section": "",
     "text": "Earlier attempts to define data science visually—such as Conway’s Venn diagram—centered on hacking skills, statistics, and domain knowledge. While influential, that framing is now outdated.\nA more precise picture situates data science at the intersection of:\n- Statistical modeling — tools for inference, uncertainty, and causality\n- Scientific computing — numerical methods, simulations, and computation\n- Systems research — studying complex, interactive software environments\nThis triad places data science alongside fields like econometrics, computational physics, and quantitative social science. It emphasizes rigor and replicability. And it highlights that data science is not just about using data, but about understanding the systems that produce it.",
     "crumbs": [
-      "Skillsets and Team Structure",
+      "**The Data Scientists**",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>A Refined Venn Diagram of Data Science</span>"
     ]
   },
   {
     "objectID": "chapters/t-model.html",
     "href": "chapters/t-model.html",
-    "title": "7  The T-Model of Skill Development",
+    "title": "The T-Model of Skill Development",
     "section": "",
     "text": "Data scientists develop along a T-shaped trajectory:\n- The horizontal bar represents breadth—exposure to tools, methods, and adjacent domains.\n- The vertical bar represents depth—specialization in one or more areas like causal inference, simulation, or optimization.\nThis model supports differentiated roles:\n- A generalist might help design broad research programs.\n- A specialist might focus on methodological innovation or platform-level modeling.\nTitle tracks should reflect this diversity. Rather than forcing all scientists into a “full-stack” mold, orgs can recognize distinct paths:\n- Researcher\n- Methodologist\n- Domain expert\n- Tool-builder\nThis structure also helps build effective teams—ones that combine varied skill sets across the disciplinary landscape.",
     "crumbs": [
-      "Skillsets and Team Structure",
+      "**The Data Scientists**",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The T-Model of Skill Development</span>"
     ]
   },
   {
     "objectID": "chapters/team-sport.html",
     "href": "chapters/team-sport.html",
-    "title": "8  Data Science as a Team Sport",
+    "title": "Data Science as a Team Sport",
     "section": "",
     "text": "(Organizing scientists into labs with complementary strengths across the venn.)",
     "crumbs": [
-      "Skillsets and Team Structure",
+      "**The Data Scientists**",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Science as a Team Sport</span>"
     ]
   },
   {
     "objectID": "chapters/research-programs.html",
     "href": "chapters/research-programs.html",
-    "title": "9  Managing Data Science Through Research Programs",
+    "title": "Managing Data Science Through Research Programs",
     "section": "",
     "text": "(Differentiating research from projects; long-term, iterative, institutional memory.)",
     "crumbs": [
-      "Research Management and Process",
+      "**Research Management and Process**",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Managing Data Science Through Research Programs</span>"
     ]
   },
   {
     "objectID": "chapters/scientific-method.html",
     "href": "chapters/scientific-method.html",
-    "title": "10  The Scientific Method in Data Science",
+    "title": "The Scientific Method in Data Science",
     "section": "",
     "text": "(Hypothesis-driven study design, using Jira and other tools to support structured inquiry.)",
     "crumbs": [
-      "Research Management and Process",
+      "**Research Management and Process**",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>The Scientific Method in Data Science</span>"
     ]
   },
   {
     "objectID": "chapters/capability-maturity.html",
     "href": "chapters/capability-maturity.html",
-    "title": "11  Using the Capability Maturity Model in Data Science",
+    "title": "Using the Capability Maturity Model in Data Science",
     "section": "",
     "text": "(Applying the CMM to assess and scaffold experimentation and system design.)",
     "crumbs": [
-      "Research Management and Process",
+      "**Research Management and Process**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Using the Capability Maturity Model in Data Science</span>"
     ]
   },
   {
     "objectID": "chapters/lab-workbench.html",
     "href": "chapters/lab-workbench.html",
-    "title": "12  The Data Scientist’s Lab Workbench",
+    "title": "The Data Scientist’s Lab Workbench",
     "section": "",
     "text": "(SQL as data collection, Python as instrumentation, Jupyter/Markdown/Quarto as lab notebooks.)",
     "crumbs": [
-      "Tooling and Lab Practice",
+      "**Tooling and Lab Practice**",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>The Data Scientist's Lab Workbench</span>"
     ]
   },
   {
     "objectID": "chapters/documentation.html",
     "href": "chapters/documentation.html",
-    "title": "13  Documentation and Knowledge Repositories",
+    "title": "Documentation and Knowledge Repositories",
     "section": "",
     "text": "(Writing for different audiences, synthesis vs analysis, memory and communication.)",
     "crumbs": [
-      "Tooling and Lab Practice",
+      "**Tooling and Lab Practice**",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Documentation and Knowledge Repositories</span>"
     ]
   },
   {
     "objectID": "chapters/probability-inference.html",
     "href": "chapters/probability-inference.html",
-    "title": "14  Probability and Statistical Inference",
+    "title": "Probability and Statistical Inference",
     "section": "",
     "text": "(Quantifying uncertainty, validating observations, and the logic of belief.)",
     "crumbs": [
-      "Statistical Thinking",
+      "**Statistical Thinking**",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Probability and Statistical Inference</span>"
     ]
   }
