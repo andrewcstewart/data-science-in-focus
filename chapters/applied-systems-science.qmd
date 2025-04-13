@@ -1,0 +1,11 @@
+# Data Science as Applied Systems Science
+
+At its core, data science is the study of complex, adaptive systems. These systems—markets, platforms, recommendation engines, networks—are not static. They evolve, respond to feedback, and often exhibit emergent behavior.
+
+To understand such systems, data scientists borrow heavily from adjacent fields:  
+- **Control theory** to manage dynamic processes  
+- **Cybernetics** to study feedback loops  
+- **Complexity science** to model emergence  
+- **Information theory** to reason about signal and noise
+
+This systems-thinking mindset distinguishes data science from business analytics or product instrumentation. It frames metrics as proxies, not truths. It treats models as lenses, not deliverables. And it embraces the recursive nature of systems—where measurement affects behavior, and knowledge must continually update in response.

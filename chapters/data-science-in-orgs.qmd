@@ -1,0 +1,12 @@
+# Where Data Science Fits in Technology Organizations
+
+Data science occupies a unique niche within technology orgs. It bridges engineering, product, and strategy—but it is fundamentally distinct from all three. Its core deliverable is understanding, not execution.
+
+The organizational structure of data science varies:  
+- **Centralized teams** emphasize consistency and shared standards.  
+- **Embedded models** prioritize domain intimacy and responsiveness.  
+- **Hybrid approaches** attempt to balance autonomy and alignment.
+
+Tensions often arise when data science is treated as a service function, expected to deliver dashboards or one-off analyses on demand. But a scientific function thrives on longer-term research questions, context-rich collaboration, and space to explore uncertainty. Successful teams recognize this and give data scientists both embedded partnerships and protected research capacity.
+
+The most effective data science orgs invest in career ladders, program-based workstreams, and a clear cultural distinction between scientists and engineers—while encouraging tight collaboration across them.

@@ -1,3 +1,22 @@
+# Quarto book build output
+_book/
+_site/
+
+# Rendered output formats (optional, if you're not keeping them)
+*.html
+*.pdf
+*.docx
+*.epub
+
+# Quarto build/cache directories
+.quarto/
+*.knit.md
+*.utf8.md
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -172,3 +191,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+/.quarto/

@@ -1,0 +1,17 @@
+# The T-Model of Skill Development
+
+Data scientists develop along a T-shaped trajectory:  
+- The **horizontal bar** represents breadth—exposure to tools, methods, and adjacent domains.  
+- The **vertical bar** represents depth—specialization in one or more areas like causal inference, simulation, or optimization.
+
+This model supports differentiated roles:  
+- A generalist might help design broad research programs.  
+- A specialist might focus on methodological innovation or platform-level modeling.
+
+Title tracks should reflect this diversity. Rather than forcing all scientists into a “full-stack” mold, orgs can recognize distinct paths:  
+- Researcher  
+- Methodologist  
+- Domain expert  
+- Tool-builder
+
+This structure also helps build effective teams—ones that combine varied skill sets across the disciplinary landscape.

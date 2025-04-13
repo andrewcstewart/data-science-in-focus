@@ -1,0 +1,7 @@
+# A Brief History of Data Science
+
+Data science didn’t emerge from a single lineage—it was born from a convergence. Statistics, scientific computing, database management, and machine learning all played formative roles in shaping the field. During the early 2000s, as computational infrastructure and open-source tools proliferated, organizations began to realize that “data” wasn't just a byproduct of digital systems—it was a source of insight.
+
+The rise of the “data scientist” as a role came partly from pragmatism: organizations needed generalists who could both analyze and code. But this era was also defined by confusion. Data science became a catch-all title encompassing analysts, engineers, ML researchers, and more. The result was a temporary inflation of the field—a golden age of generalists with ambiguous scope.
+
+Now, a decade later, the landscape is maturing. Specialized engineering roles have splintered off. Machine learning engineering, analytics engineering, and decision science have defined clearer scopes. What remains in the heart of “data science” is its original essence: a scientific discipline grounded in inquiry, system behavior, and the pursuit of explanatory knowledge.

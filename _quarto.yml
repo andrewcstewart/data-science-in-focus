@@ -1,0 +1,68 @@
+project:
+  type: book
+
+book:
+  title: "Data Science in Focus"
+  author: "Andrew Stewart"
+  date: "4/12/2025"
+
+  reader-mode: true
+
+  page-footer:
+    left: |
+      Data Science in Focus was written by Andrew Stewart.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  # cover-image: cover.png
+  favicon: cover.png
+  site-url: https://andrewcstewart.github.io/data-science-in-focus
+  repo-url: https://github.com/andrewcstewart/data-science-in-focus
+  repo-branch: main
+  repo-actions: [edit, issue]
+  
+  sidebar: 
+    # background: "#F5F5F5"
+    logo: cover.png
+    search: true
+
+  chapters:
+    - index.qmd
+
+    - part: "Framing and Foundations"
+      chapters:
+        - chapters/what-is-data-science.qmd
+        - chapters/history-of-data-science.qmd
+        - chapters/data-science-in-orgs.qmd
+        - chapters/applied-systems-science.qmd
+
+    - part: "Skillsets and Team Structure"
+      chapters:
+        - chapters/venn-diagram.qmd
+        - chapters/t-model.qmd
+        - chapters/team-sport.qmd
+
+    - part: "Research Management and Process"
+      chapters:
+        - chapters/research-programs.qmd
+        - chapters/scientific-method.qmd
+        - chapters/capability-maturity.qmd
+
+    - part: "Tooling and Lab Practice"
+      chapters:
+        - chapters/lab-workbench.qmd
+        - chapters/documentation.qmd
+
+    - part: "Statistical Thinking"
+      chapters:
+        - chapters/probability-inference.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

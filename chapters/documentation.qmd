@@ -1,0 +1,3 @@
+# Documentation and Knowledge Repositories
+
+(Writing for different audiences, synthesis vs analysis, memory and communication.)

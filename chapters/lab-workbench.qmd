@@ -1,0 +1,3 @@
+# The Data Scientist's Lab Workbench
+
+(SQL as data collection, Python as instrumentation, Jupyter/Markdown/Quarto as lab notebooks.)

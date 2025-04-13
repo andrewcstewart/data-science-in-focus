@@ -1,0 +1,3 @@
+# Managing Data Science Through Research Programs
+
+(Differentiating research from projects; long-term, iterative, institutional memory.)

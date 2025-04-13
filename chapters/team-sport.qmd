@@ -1,0 +1,3 @@
+# Data Science as a Team Sport
+
+(Organizing scientists into labs with complementary strengths across the venn.)
