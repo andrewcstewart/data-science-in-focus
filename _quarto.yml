@@ -18,7 +18,7 @@ book:
   
   sidebar:
     style: floating  # slim floating style like Modern Polars
-    collapse-level: 1
+    collapse-level: 2
     search: true    # background: "#F5F5F5"
     logo: cover.png
 

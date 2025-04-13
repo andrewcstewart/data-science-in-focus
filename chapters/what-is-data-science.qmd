@@ -1,3 +1,56 @@
-# What Is Data Science
+---
+title: "What Is Data Science?"
+format: html
+number-sections: false
+---
 
-(Full draft previously provided. You may replace the placeholder with the detailed version.)
+# What Is Data Science?
+
+In the era of tech monoculture, the term *data science* has been stretched to near incoherence—absorbing everything from analytics engineering to AI research under its inflated halo. But if we strip away the branding and job title inflation, what remains is something much older, much simpler, and much more principled: **data science is the application of the scientific method to the study of data-generating systems.**
+
+It is not a subfield of software engineering. It is not a synonym for machine learning. It is not a placeholder for “person who works with data.” Data science, properly understood, is a **scientific discipline**—defined not by its tooling or domain, but by its epistemology. Its goal is to generate knowledge. Its process is experimental. Its currency is uncertainty. And its outputs are not products, but explanations.
+
+## A Discipline of Inquiry, Not Output
+
+What distinguishes data science from engineering is not the data—it’s the **orientation toward inquiry**.
+
+- **Engineers** build systems that are designed to perform reliably and at scale.
+- **Scientists** study systems to understand how and why they behave the way they do.
+
+Data scientists may use engineering tools, work within engineering organizations, and produce artifacts that feed into engineering systems. But their foundational job is to ask—and answer—questions about system behavior. They design experiments, test hypotheses, analyze variation, and build explanatory models. In this sense, a data scientist is closer to a physicist studying turbulence than a developer deploying a feature.
+
+This isn’t a hierarchy. It’s a **division of labor**—and misunderstanding it leads to broken workflows, misaligned expectations, and org charts that burn out good scientists by asking them to write production code full-time.
+
+## The Objects of Study
+
+Data science is concerned with **data-generating processes**, especially those that arise within technological systems. Some examples:
+
+- How does user engagement change in response to a new design?
+- What latent behaviors drive churn in a subscription model?
+- Why did model performance degrade last week?
+- What features of a marketplace system produce price instability?
+
+These are not engineering problems. They’re **systems questions**. Answering them requires conceptual models, uncertainty quantification, domain awareness, and often a blend of statistical inference and simulation. They also often involve dead ends, ambiguous results, and theoretical exploration—things that are normal in science but foreign to many software workflows.
+
+## The Tools Are Not the Discipline
+
+It’s tempting to define data science by its stack: SQL, Python, pandas, Jupyter, etc. But that would be like defining chemistry by beakers and Bunsen burners. Tools enable the work—they aren’t the work.
+
+In fact, many of the tools used in data science are borrowed from engineering or software development. The difference is in **how they’re used**. A data scientist doesn’t write Python to deploy services; they use it to simulate a hypothesis, analyze system output, or validate statistical assumptions. SQL isn’t a pipeline—it’s a telescope.
+
+## Science Inside a Software Org
+
+One of the greatest challenges facing data scientists today is that they are often the only scientists inside engineering organizations. That creates cultural friction. Deadlines prioritize shipping over understanding. Metrics are flattened into KPIs. Curiosity becomes a liability. Documentation is seen as overhead rather than intellectual scaffolding.
+
+But despite these tensions, data science has a crucial role to play: it helps organizations **understand themselves**. It maps the terrain, exposes the mechanisms, and builds the mental models that engineering and product teams rely on to make informed decisions.
+
+When practiced as science, data science becomes the **epistemic engine** of a tech company. It gives us confidence not just in what we’re building, but in what we believe.
+
+## In Summary
+
+- Data science is a **scientific discipline** rooted in the study of complex systems through data.
+- Its central purpose is **explanation**, not output.
+- Its methods are driven by **hypothesis, experimentation, and inference**.
+- Its work supports and complements engineering by providing **clarity, context, and insight**.
+
+By treating data science as science, we restore its rightful posture—an experimental partner to engineering, a conceptual partner to product, and a critical lens for understanding the systems we build and inhabit.
