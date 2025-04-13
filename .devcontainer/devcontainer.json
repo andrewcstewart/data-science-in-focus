@@ -1,0 +1,16 @@
+{
+    "name": "Quarto Site Dev",
+    "image": "quarto-dev/quarto:latest",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "quarto.quarto",
+          "yzhang.markdown-all-in-one"
+        ]
+      }
+    },
+    "features": {},
+    "forwardPorts": [8000],
+    "postCreateCommand": "quarto install"
+  }
+  
