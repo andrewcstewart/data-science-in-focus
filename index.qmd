@@ -4,8 +4,9 @@ format: html
 number-sections: false
 ---
 
-# Data Science In Focus
-### *Refining Practice, Deepening Understanding*
+# Introduction {.unnumbered}
+
+## *Refining Practice, Deepening Understanding* 
 
 **Data Science In Focus** is a reflective essay series on data science as a scientific discipline—what it is, how it’s practiced, and what it has become. As the field matures beyond its early hype cycles and into a coherent form of applied research, this series aims to sharpen our collective understanding of the work itself.
 

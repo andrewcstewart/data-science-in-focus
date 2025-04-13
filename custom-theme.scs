@@ -1,0 +1,42 @@
+/* Custom Quarto SCSS Theme — Data Science In Focus */
+
+$body-bg: #F4F1E1;
+$body-color: #2B5D63;
+$link-color: #4C888B;
+$link-hover-color: darken($link-color, 10%);
+$navbar-bg: #2B5D63;
+$navbar-fg: #F4F1E1;
+$footer-bg: #23494C;
+$footer-fg: #F4F1E1;
+$code-bg: #E9E5D0;
+$code-color: #23494C;
+$heading-color: #2B5D63;
+$border-color: #564C28;
+$primary: #4C888B;
+
+:root {
+  --bs-primary: #4C888B;
+}
+
+/* ----- Sidebar Fix for Active Link in Book Mode ----- */
+.sidebar nav[role=doc-toc] .active > a,
+.sidebar nav[role=doc-toc] a.active,
+.sidebar .sidebar-item-container > .sidebar-item.active > a,
+.sidebar .sidebar-item-container > .sidebar-item > a.active {
+  background-color: #4C888B !important;
+  color: #F4F1E1 !important;
+  font-weight: 600 !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Optional hover styles for consistency */
+.sidebar nav[role=doc-toc] a:hover {
+  background-color: lighten(#4C888B, 10%);
+  color: #ffffff;
+}
+
+/* Navbar branding */
+.navbar-brand {
+  font-weight: bold;
+  color: #F4F1E1 !important;
+}

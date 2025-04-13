@@ -8,51 +8,57 @@ book:
 
   reader-mode: true
 
-  page-footer:
-    left: |
-      Data Science in Focus was written by Andrew Stewart.
-    right: |
-      This book was built with <a href="https://quarto.org/">Quarto</a>.
-  # cover-image: cover.png
   favicon: cover.png
+  image: cover.png
+  cover-image: cover.png
   site-url: https://andrewcstewart.github.io/data-science-in-focus
   repo-url: https://github.com/andrewcstewart/data-science-in-focus
   repo-branch: main
   repo-actions: [edit, issue]
   
-  sidebar: 
-    # background: "#F5F5F5"
+  sidebar:
+    style: floating  # slim floating style like Modern Polars
+    collapse-level: 1
+    search: true    # background: "#F5F5F5"
     logo: cover.png
-    search: true
+
+  navbar:
+    background: "#2B5D63"
+    foreground: "#F4F1E1"
+
+  page-footer:
+    left: "© 2025 Andrew Stewart"
+    background: "#23494C"
+    foreground: "#F4F1E1"
 
   chapters:
     - index.qmd
 
-    - part: "Framing and Foundations"
+    - part: "**Defining Data Science**"
       chapters:
         - chapters/what-is-data-science.qmd
         - chapters/history-of-data-science.qmd
         - chapters/data-science-in-orgs.qmd
         - chapters/applied-systems-science.qmd
 
-    - part: "Skillsets and Team Structure"
+    - part: "**The Data Scientists**"
       chapters:
         - chapters/venn-diagram.qmd
         - chapters/t-model.qmd
         - chapters/team-sport.qmd
 
-    - part: "Research Management and Process"
+    - part: "**Research Management and Process**"
       chapters:
         - chapters/research-programs.qmd
         - chapters/scientific-method.qmd
         - chapters/capability-maturity.qmd
 
-    - part: "Tooling and Lab Practice"
+    - part: "**Tooling and Lab Practice**"
       chapters:
         - chapters/lab-workbench.qmd
         - chapters/documentation.qmd
 
-    - part: "Statistical Thinking"
+    - part: "**Statistical Thinking**"
       chapters:
         - chapters/probability-inference.qmd
 
@@ -60,9 +66,23 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: custom-theme.scss
+    css: styles.css
+  # html:
+  #   theme: cosmo  # or flatly
+  #   toc: true
+    number-sections: false
+  #   code-copy: true
+  #   # css: styles.css
+  #   # include-in-header:
+  #   #   - text: |
+  #   #       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+
   pdf:
     documentclass: scrreprt
-
+    toc: true
+    number-sections: true
 
 
