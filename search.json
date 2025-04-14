@@ -4,17 +4,7 @@
     "href": "index.html",
     "title": "Data Science In Focus",
     "section": "",
-    "text": "Introduction",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data Science In Focus</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#refining-practice-deepening-understanding",
-    "href": "index.html#refining-practice-deepening-understanding",
-    "title": "Data Science In Focus",
-    "section": "Refining Practice, Deepening Understanding",
-    "text": "Refining Practice, Deepening Understanding\nData Science In Focus is a reflective essay series on data science as a scientific discipline—what it is, how it’s practiced, and what it has become. As the field matures beyond its early hype cycles and into a coherent form of applied research, this series aims to sharpen our collective understanding of the work itself.\nWhere a bountiful collection of earlier works have laid the groundwork for a newly forming field, these essays here revisit core questions with the benefit of hindsight:\n- What does it mean to practice data science as science?\n- How should teams, tools, and systems support inquiry over output?\n- What kind of knowledge does data science produce—and for whom?\nRooted in the scientific method, structured around the research lifecycle, and steeped in the evolving norms of modern tech orgs, this series puts the discipline itself into focus.",
+    "text": "Introduction\nData Science In Focus is a reflective essay series on data science as a scientific discipline—what it is, how it’s practiced, and what it has become. As the field matures beyond its early hype cycles and into a coherent form of applied research, this series aims to sharpen our collective understanding of the work itself.\nWhere a bountiful collection of earlier works have laid the groundwork for a newly forming field, these essays here revisit core questions with the benefit of hindsight:\n- What does it mean to practice data science as science?\n- How should teams, tools, and systems support inquiry over output?\n- What kind of knowledge does data science produce—and for whom?\nRooted in the scientific method, structured around the research lifecycle, and steeped in the evolving norms of modern tech orgs, this series puts the discipline itself into focus.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data Science In Focus</span>"
     ]
