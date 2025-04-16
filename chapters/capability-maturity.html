@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/venn-diagram.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
+  <a href="../chapters/venn-data-science.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -256,8 +256,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#from-software-to-science-a-rationale" id="toc-from-software-to-science-a-rationale" class="nav-link active" data-scroll-target="#from-software-to-science-a-rationale">From Software to Science: A Rationale</a></li>
+  <li><a href="#stages-of-maturity-in-data-science" id="toc-stages-of-maturity-in-data-science" class="nav-link" data-scroll-target="#stages-of-maturity-in-data-science">Stages of Maturity in Data Science</a></li>
+  <li><a href="#diagnosing-maturity" id="toc-diagnosing-maturity" class="nav-link" data-scroll-target="#diagnosing-maturity">Diagnosing Maturity</a></li>
+  <li><a href="#practical-applications" id="toc-practical-applications" class="nav-link" data-scroll-target="#practical-applications">Practical Applications</a></li>
+  <li><a href="#maturity-as-leverage-for-leadership" id="toc-maturity-as-leverage-for-leadership" class="nav-link" data-scroll-target="#maturity-as-leverage-for-leadership">Maturity as Leverage for Leadership</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/capability-maturity.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -281,9 +293,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>(Applying the CMM to assess and scaffold experimentation and system design.)</p>
+<p>In many organizations, data science initiatives begin with enthusiasm but lack structured frameworks to assess or guide their evolution. The Capability Maturity Model (CMM), originally developed to evaluate software development processes, offers a powerful lens for assessing the maturity of data science practices. By adapting the CMM to data science, teams can better understand where they are, where they could go, and what steps are required to grow from ad hoc experimentation to rigorous, institutionalized innovation.</p>
+<section id="from-software-to-science-a-rationale" class="level2">
+<h2 class="anchored" data-anchor-id="from-software-to-science-a-rationale">From Software to Science: A Rationale</h2>
+<p>The CMM was introduced by the Software Engineering Institute to assess the process maturity of software organizations, guiding them from chaotic, hero-driven development to optimized, quantitative refinement of practices (Paulk et al., 1993). Despite its origin in software, the staged model of maturity maps well onto data science because both are process-heavy disciplines that demand rigor, repeatability, and quality control.</p>
+</section>
+<section id="stages-of-maturity-in-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="stages-of-maturity-in-data-science">Stages of Maturity in Data Science</h2>
+<p>An adapted CMM for data science typically includes five stages:</p>
+<ol type="1">
+<li><strong>Initial (Ad hoc)</strong> – Efforts are unstructured, success is person-dependent, and reproducibility is rare.</li>
+<li><strong>Repeatable</strong> – Some basic processes are reused (e.g., standard SQL queries, common scripts), but documentation and metrics are inconsistent.</li>
+<li><strong>Defined</strong> – Processes are documented and standardized across teams. Models are versioned, reviewed, and tied to business objectives.</li>
+<li><strong>Managed</strong> – Quantitative metrics guide model performance, experimentation, and business impact. Experiment tracking and reproducibility are central.</li>
+<li><strong>Optimizing</strong> – The organization continuously refines practices using feedback loops, automated retraining, and post-deployment monitoring.</li>
+</ol>
+<p>These stages build progressively on each other, but in practice, different aspects of a team (e.g., modeling vs.&nbsp;data engineering) may reside at different maturity levels simultaneously.</p>
+</section>
+<section id="diagnosing-maturity" class="level2">
+<h2 class="anchored" data-anchor-id="diagnosing-maturity">Diagnosing Maturity</h2>
+<p>Assessing data science maturity involves identifying key dimensions such as:</p>
+<ul>
+<li><strong>Experimentation discipline</strong>: How rigorously are hypotheses defined and validated?</li>
+<li><strong>Model lifecycle management</strong>: Are models reproducible, versioned, and monitored?</li>
+<li><strong>Knowledge retention</strong>: Are results documented, shared, and used to inform future work?</li>
+<li><strong>Integration with product development</strong>: Are models tied to measurable business outcomes?</li>
+</ul>
+<p>A diagnostic framework across these axes can expose inconsistencies and help prioritize improvements.</p>
+</section>
+<section id="practical-applications" class="level2">
+<h2 class="anchored" data-anchor-id="practical-applications">Practical Applications</h2>
+<p>Teams at the lower stages often focus on local wins—delivering one-off analyses or models without long-term sustainability. However, maturity shifts the focus toward <em>institutional learning</em>—transforming one-off experiments into robust systems. For instance, implementing standardized experiment tracking (e.g., with MLflow or Weights &amp; Biases) can move a team from Stage 2 to Stage 3 by enabling replicability and peer review (Zaharia et al., 2018).</p>
+<p>At higher levels, maturity enables organizations to treat data science as a platform capability. Mature organizations invest in internal research programs, internal tooling, and shared knowledge repositories. At Stage 5, the organization continuously improves its research productivity and decision-making precision through rigorous feedback cycles and automation (Furterer, 2009).</p>
+</section>
+<section id="maturity-as-leverage-for-leadership" class="level2">
+<h2 class="anchored" data-anchor-id="maturity-as-leverage-for-leadership">Maturity as Leverage for Leadership</h2>
+<p>Executives often demand business impact, yet data science teams may struggle to translate their work into such terms. A maturity model provides language to frame conversations not just around outcomes, but capabilities: “We’re not yet at a stage where we can deliver real-time uplift estimates because our model monitoring infrastructure is still at Stage 2.”</p>
+<p>This framing turns a capability gap into an investment roadmap, positioning data science as a strategic function, not a service desk. It also makes success legible across organizational boundaries by highlighting process improvements in addition to model results.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Using a Capability Maturity Model framework allows data science leaders to chart a realistic progression from chaos to optimization. It encourages structured growth, supports strategic investment, and anchors scientific curiosity in process discipline. As the field matures, such frameworks may become essential not only for managing teams, but for managing trust in data-driven decisions themselves.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -723,7 +779,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/capability-maturity.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/capability-maturity.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

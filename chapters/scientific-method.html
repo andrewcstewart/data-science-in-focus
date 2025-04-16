@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Understanding the scientific method as the core process driving data science inquiry.">
 
 <title>The Scientific Method in Data Science – Data Science in Focus</title>
 <style>
@@ -20,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -173,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/venn-diagram.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
+  <a href="../chapters/venn-data-science.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -256,8 +277,19 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-method-is-the-discipline" id="toc-the-method-is-the-discipline" class="nav-link active" data-scroll-target="#the-method-is-the-discipline">The Method Is the Discipline</a></li>
+  <li><a href="#against-the-ticket-queue" id="toc-against-the-ticket-queue" class="nav-link" data-scroll-target="#against-the-ticket-queue">Against the Ticket Queue</a></li>
+  <li><a href="#hypothesis-stories-in-practice" id="toc-hypothesis-stories-in-practice" class="nav-link" data-scroll-target="#hypothesis-stories-in-practice">Hypothesis Stories in Practice</a></li>
+  <li><a href="#accumulating-knowledge" id="toc-accumulating-knowledge" class="nav-link" data-scroll-target="#accumulating-knowledge">Accumulating Knowledge</a></li>
+  <li><a href="#embracing-imperfection" id="toc-embracing-imperfection" class="nav-link" data-scroll-target="#embracing-imperfection">Embracing Imperfection</a></li>
+  <li><a href="#a-smarter-team-not-a-slower-one" id="toc-a-smarter-team-not-a-slower-one" class="nav-link" data-scroll-target="#a-smarter-team-not-a-slower-one">A Smarter Team, Not a Slower One</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/scientific-method.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -281,9 +313,68 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>(Hypothesis-driven study design, using Jira and other tools to support structured inquiry.)</p>
+<section id="the-method-is-the-discipline" class="level1">
+<h1>The Method Is the Discipline</h1>
+<p>The scientific method isn’t just a metaphor for how data science works — it is the method. If data science is to remain science and not drift into analytics theater, the discipline must center itself on systematic hypothesis testing, error analysis, and the incremental refinement of understanding. Models, dashboards, and even causal inference pipelines are tools. The method is the process.</p>
+<p>At its core, the scientific method is an iterative loop that begins with observations, forms hypotheses, tests those hypotheses with data, and refines those ideas in light of the results. This framework, ancient in origin but modern in its rigor, enables the accumulation of reliable knowledge in the face of uncertainty and noise — the very conditions of production data <span class="citation" data-cites="popper2002logic gelman2013bayesian">(<a href="#ref-popper2002logic" role="doc-biblioref">Popper 2002</a>; <a href="#ref-gelman2013bayesian" role="doc-biblioref">Gelman et al. 2013</a>)</span>.</p>
+</section>
+<section id="against-the-ticket-queue" class="level1">
+<h1>Against the Ticket Queue</h1>
+<p>In most tech organizations, however, this process is implicitly degraded. Business stakeholders prefer answers to questions, and models to uncertainty. Data scientists are frequently pushed into a service model: pull the data, run the regression, answer the ticket. But such a mode of operation short-circuits the fundamental value proposition of science — not to produce answers per se, but to generate validated knowledge <span class="citation" data-cites="wilson2014best">(<a href="#ref-wilson2014best" role="doc-biblioref">Wilson et al. 2014</a>)</span>.</p>
+<p>To realign with the scientific method, data science teams must reconceptualize their work as research programs rather than ticket queues. This means developing research questions, designing hypothesis-driven experiments, and documenting outcomes, whether confirming or null. It also means resisting the allure of spurious correlations, post-hoc rationalization, and aesthetic dashboards with no inferential content <span class="citation" data-cites="beaulieu2020data">(<a href="#ref-beaulieu2020data" role="doc-biblioref">Beaulieu 2020</a>)</span>.</p>
+</section>
+<section id="hypothesis-stories-in-practice" class="level1">
+<h1>Hypothesis Stories in Practice</h1>
+<p>One practical entry point is the introduction of hypothesis stories — a lightweight narrative form that frames any analysis as a falsifiable test. A hypothesis story includes: (1) the intuition or anomaly prompting inquiry, (2) the operational hypothesis to be tested, (3) the method for testing it, and (4) the expected implications of each possible outcome. It’s a format that brings both rigor and clarity, and it can be embedded directly in a team’s workflow.</p>
+<p>Tools like Jira and Notion can be reappropriated for this purpose. Instead of task cards, each analysis ticket becomes a living experiment write-up. The story evolves as data is collected, tested, and interpreted. This approach preserves the continuity of thought across weeks or months of work and allows others to trace the intellectual lineage of decisions made.</p>
+</section>
+<section id="accumulating-knowledge" class="level1">
+<h1>Accumulating Knowledge</h1>
+<p>The output of this process should be cumulative. Data science, like any scientific discipline, depends on a shared corpus of knowledge. Each completed hypothesis story, once validated, becomes a building block — a finding that can be cited, revisited, or contradicted. Teams should maintain an internal knowledge repository, akin to a lab notebook, in which these results are captured and synthesized <span class="citation" data-cites="leek2017opinion">(<a href="#ref-leek2017opinion" role="doc-biblioref">Leek and Peng 2017</a>)</span>.</p>
+<p>Such a shift is cultural, not just procedural. It demands that leadership reward clarity over certainty, and depth over speed. It requires that product managers and analysts align on framing questions, not just interpreting results. And it implies that models are not the final output, but instruments of a broader research agenda <span class="citation" data-cites="passi2020problem">(<a href="#ref-passi2020problem" role="doc-biblioref">Passi and Barocas 2020</a>)</span>.</p>
+</section>
+<section id="embracing-imperfection" class="level1">
+<h1>Embracing Imperfection</h1>
+<p>Of course, the rigor of science cannot be absolute in a commercial setting. Time constraints, incomplete data, and organizational pressure all impinge on ideal practice. But that makes the scaffolding of the scientific method even more essential. It ensures that even when shortcuts are taken, they are acknowledged as such — and that findings are always framed in probabilistic, not deterministic, terms.</p>
+<p>One important ally here is Bayesian reasoning. The Bayesian framework formalizes belief updating, allowing teams to express uncertainty, incorporate prior knowledge, and revise expectations in light of new evidence. It maps cleanly onto the scientific method and can be a bridge between intuitive judgment and formal inference <span class="citation" data-cites="mcgrayne2011theory">(<a href="#ref-mcgrayne2011theory" role="doc-biblioref">McGrayne 2011</a>)</span>.</p>
+<p>Another helpful structure is the distinction between exploratory and confirmatory analysis. Exploratory work is generative and open-ended; it’s where ideas are born. Confirmatory analysis tests those ideas against the harsh discipline of data. When the two are conflated — as they often are — findings become less reliable. Separating them maintains epistemic hygiene <span class="citation" data-cites="tukey1977exploratory">(<a href="#ref-tukey1977exploratory" role="doc-biblioref">Tukey 1977</a>)</span>.</p>
+</section>
+<section id="a-smarter-team-not-a-slower-one" class="level1">
+<h1>A Smarter Team, Not a Slower One</h1>
+<p>Critically, this orientation doesn’t slow teams down. It makes them smarter. A team that operates with a scientific mindset iterates more effectively, avoids repeated mistakes, and builds organizational memory. It knows what it knows, and more importantly, it knows the limits of what it knows.</p>
+<p>In the long arc, this produces not just better models, but better understanding. And that, more than any one predictive output, is the lasting contribution of data science to the organization.</p>
+<blockquote class="blockquote">
+<p><em>“The aim of science is not to open the door to infinite wisdom, but to set a limit to infinite error.”</em> — Bertolt Brecht (via <em>Galileo</em>)</p>
+</blockquote>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-beaulieu2020data" class="csl-entry" role="listitem">
+Beaulieu, Anne. 2020. <span>“Data and Society.”</span> <em>Annual Review of Anthropology</em> 49: 151–67. <a href="https://doi.org/10.1146/annurev-anthro-102218-011429">https://doi.org/10.1146/annurev-anthro-102218-011429</a>.
+</div>
+<div id="ref-gelman2013bayesian" class="csl-entry" role="listitem">
+Gelman, Andrew, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari, and Donald B. Rubin. 2013. <em>Bayesian Data Analysis</em>. 3rd ed. Boca Raton: CRC Press.
+</div>
+<div id="ref-leek2017opinion" class="csl-entry" role="listitem">
+Leek, Jeffrey T., and Roger D. Peng. 2017. <span>“Opinion: Five Ways to Improve Reproducibility.”</span> <em>Nature</em> 551 (7685): 768. <a href="https://doi.org/10.1038/d41586-017-07522-z">https://doi.org/10.1038/d41586-017-07522-z</a>.
+</div>
+<div id="ref-mcgrayne2011theory" class="csl-entry" role="listitem">
+McGrayne, Sharon Bertsch. 2011. <em>The Theory That Would Not Die: How Bayes’ Rule Cracked the Enigma Code, Hunted down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy</em>. New Haven: Yale University Press.
+</div>
+<div id="ref-passi2020problem" class="csl-entry" role="listitem">
+Passi, Samir, and Solon Barocas. 2020. <span>“Problem Formulation and Fairness.”</span> <em>Proceedings of the ACM on Human-Computer Interaction</em> 3 (CSCW): 1–22. <a href="https://doi.org/10.1145/3359228">https://doi.org/10.1145/3359228</a>.
+</div>
+<div id="ref-popper2002logic" class="csl-entry" role="listitem">
+Popper, Karl. 2002. <em>The Logic of Scientific Discovery</em>. London: Routledge.
+</div>
+<div id="ref-tukey1977exploratory" class="csl-entry" role="listitem">
+Tukey, John W. 1977. <em>Exploratory Data Analysis</em>. Reading, MA: Addison-Wesley.
+</div>
+<div id="ref-wilson2014best" class="csl-entry" role="listitem">
+Wilson, Greg, Arjun Aruliah, C. Titus Brown, Neil P. Chue Hong, Michael Davis, Richard T. Guy, Steven H. D. Haddock, et al. 2014. <span>“Best Practices for Scientific Computing.”</span> <em>PLOS Biology</em> 12 (1): e1001745. <a href="https://doi.org/10.1371/journal.pbio.1001745">https://doi.org/10.1371/journal.pbio.1001745</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -723,7 +814,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/scientific-method.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/scientific-method.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

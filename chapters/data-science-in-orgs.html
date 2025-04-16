@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/venn-diagram.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
+  <a href="../chapters/venn-data-science.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -256,8 +256,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-data-science-does-and-doesnt-do" id="toc-what-data-science-does-and-doesnt-do" class="nav-link active" data-scroll-target="#what-data-science-does-and-doesnt-do">What Data Science Does — and Doesn’t — Do</a></li>
+  <li><a href="#functional-vs.-matrixed-vs.-embedded-models" id="toc-functional-vs.-matrixed-vs.-embedded-models" class="nav-link" data-scroll-target="#functional-vs.-matrixed-vs.-embedded-models">Functional vs.&nbsp;Matrixed vs.&nbsp;Embedded Models</a></li>
+  <li><a href="#data-sciences-role-in-the-product-lifecycle" id="toc-data-sciences-role-in-the-product-lifecycle" class="nav-link" data-scroll-target="#data-sciences-role-in-the-product-lifecycle">Data Science’s Role in the Product Lifecycle</a></li>
+  <li><a href="#data-science-vs.-data-engineering-vs.-analytics" id="toc-data-science-vs.-data-engineering-vs.-analytics" class="nav-link" data-scroll-target="#data-science-vs.-data-engineering-vs.-analytics">Data Science vs.&nbsp;Data Engineering vs.&nbsp;Analytics</a></li>
+  <li><a href="#organizational-allies-and-tensions" id="toc-organizational-allies-and-tensions" class="nav-link" data-scroll-target="#organizational-allies-and-tensions">Organizational Allies and Tensions</a></li>
+  <li><a href="#institutionalizing-research-practices" id="toc-institutionalizing-research-practices" class="nav-link" data-scroll-target="#institutionalizing-research-practices">Institutionalizing Research Practices</a></li>
+  <li><a href="#leadership-and-career-development" id="toc-leadership-and-career-development" class="nav-link" data-scroll-target="#leadership-and-career-development">Leadership and Career Development</a></li>
+  <li><a href="#conclusion-science-inside-the-system" id="toc-conclusion-science-inside-the-system" class="nav-link" data-scroll-target="#conclusion-science-inside-the-system">Conclusion: Science Inside the System</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/data-science-in-orgs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -281,15 +294,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Data science occupies a unique niche within technology orgs. It bridges engineering, product, and strategy—but it is fundamentally distinct from all three. Its core deliverable is understanding, not execution.</p>
-<p>The organizational structure of data science varies:<br>
-- <strong>Centralized teams</strong> emphasize consistency and shared standards.<br>
-- <strong>Embedded models</strong> prioritize domain intimacy and responsiveness.<br>
-- <strong>Hybrid approaches</strong> attempt to balance autonomy and alignment.</p>
-<p>Tensions often arise when data science is treated as a service function, expected to deliver dashboards or one-off analyses on demand. But a scientific function thrives on longer-term research questions, context-rich collaboration, and space to explore uncertainty. Successful teams recognize this and give data scientists both embedded partnerships and protected research capacity.</p>
-<p>The most effective data science orgs invest in career ladders, program-based workstreams, and a clear cultural distinction between scientists and engineers—while encouraging tight collaboration across them.</p>
+<p>Data science is often misunderstood within the context of a modern technology company. While it shares similarities with software engineering, product analytics, and business intelligence, it is a distinct discipline with its own methods, goals, and organizational implications. To understand where data science belongs in a technology organization, we must understand what data science is and what kinds of work it produces. Only then can we structure teams and collaborations that let it thrive.</p>
+<section id="what-data-science-does-and-doesnt-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-data-science-does-and-doesnt-do">What Data Science Does — and Doesn’t — Do</h2>
+<p>Data science is the application of the scientific method to understanding how systems behave. It is not a subfield of engineering. Nor is it just about making dashboards or building models. The core activity of data science is generating <em>knowledge</em>: explanations, predictions, hypotheses, theories, and evaluations about system behavior. These systems might be algorithms, business processes, user journeys, or product mechanisms. The output of a data science function is therefore scientific in nature: insights, frameworks, metrics, hypotheses, validated learnings.</p>
+<p>By contrast, engineering teams are focused on <em>building</em> systems—software infrastructure, production algorithms, and user-facing features. Product teams are focused on <em>developing</em> systems—coordinating cross-functional work toward business objectives. Data science supports both, but its perspective is observational and interpretive rather than directive or generative. This distinction is essential.</p>
+</section>
+<section id="functional-vs.-matrixed-vs.-embedded-models" class="level2">
+<h2 class="anchored" data-anchor-id="functional-vs.-matrixed-vs.-embedded-models">Functional vs.&nbsp;Matrixed vs.&nbsp;Embedded Models</h2>
+<p>Where data science lives organizationally depends on how an organization balances centralization with specialization. There are three major models:</p>
+<ul>
+<li><strong>Functional Model</strong>: All data scientists report to a centralized data science org. They may work on a range of projects across departments, with shared standards and a common leadership structure.</li>
+<li><strong>Embedded Model</strong>: Data scientists report into the department or team they support (e.g., marketing, product, engineering), often leading to deeper integration but more fragmentation across the discipline.</li>
+<li><strong>Matrixed/Hybrid Model</strong>: Data scientists report into a central data science org but are functionally embedded in teams across the company, typically with dotted-line relationships to those teams.</li>
+</ul>
+<p>Each model has tradeoffs. Functional models promote strong peer support and shared practices but risk becoming disconnected from day-to-day product or business concerns. Embedded models encourage alignment with team priorities but often isolate data scientists and dilute standards. Matrixed models attempt to capture the best of both worlds but require clear role definitions and dual-accountability structures to succeed.</p>
+</section>
+<section id="data-sciences-role-in-the-product-lifecycle" class="level2">
+<h2 class="anchored" data-anchor-id="data-sciences-role-in-the-product-lifecycle">Data Science’s Role in the Product Lifecycle</h2>
+<p>At a high-performing company, data science contributes throughout the product lifecycle:</p>
+<ul>
+<li><strong>Exploration &amp; Ideation</strong>: framing the problem space, sizing opportunities, identifying behavioral patterns, proposing hypotheses</li>
+<li><strong>Design &amp; Planning</strong>: defining metrics, estimating baselines, setting targets, designing experiments</li>
+<li><strong>Implementation &amp; Launch</strong>: building telemetry, supporting A/B tests, validating assumptions in real time</li>
+<li><strong>Monitoring &amp; Evaluation</strong>: analyzing outcomes, contextualizing results, diagnosing regressions, proposing next steps</li>
+</ul>
+<p>Note that these contributions are not about shipping code or setting strategy. Instead, they help <em>inform</em> decision-making with a scientific perspective. This is true whether the project is product-facing, algorithmic, operational, or strategic. The data scientist is there to ask, “What do we know? How do we know it? What would change our belief?”</p>
+</section>
+<section id="data-science-vs.-data-engineering-vs.-analytics" class="level2">
+<h2 class="anchored" data-anchor-id="data-science-vs.-data-engineering-vs.-analytics">Data Science vs.&nbsp;Data Engineering vs.&nbsp;Analytics</h2>
+<p>Data science is often confused with related fields. Here’s a rough breakdown:</p>
+<ul>
+<li><strong>Data Engineering</strong>: builds pipelines, platforms, and infrastructure to make data accessible, reliable, and usable</li>
+<li><strong>Analytics / BI</strong>: creates dashboards, reports, and KPIs to monitor and summarize key business or product metrics</li>
+<li><strong>Data Science</strong>: investigates causality, uncertainty, and emergent behavior in systems using statistical and computational methods</li>
+</ul>
+<p>These roles are complementary. In some companies, one person might wear multiple hats. But for mature teams, clarity between these roles helps assign responsibility appropriately and encourages the development of specialized methods and tools.</p>
+</section>
+<section id="organizational-allies-and-tensions" class="level2">
+<h2 class="anchored" data-anchor-id="organizational-allies-and-tensions">Organizational Allies and Tensions</h2>
+<p>Data scientists work across boundaries. Their natural collaborators include:</p>
+<ul>
+<li><strong>Engineers</strong> (for instrumentation, telemetry, model integration)</li>
+<li><strong>Product Managers</strong> (for hypothesis framing, decision-making support)</li>
+<li><strong>Designers</strong> (for behavioral studies, experiment design)</li>
+<li><strong>Executives</strong> (for forecasting, scenario analysis, strategy testing)</li>
+<li><strong>Operations</strong> (for workflow optimizations and root cause analysis)</li>
+</ul>
+<p>However, tensions may arise when stakeholders expect deliverables that fall outside the scientific function of data science. For example:</p>
+<ul>
+<li>When engineers expect production-ready code</li>
+<li>When PMs expect decisions rather than probabilistic evidence</li>
+<li>When leadership expects dashboards rather than research</li>
+</ul>
+<p>These misalignments can be mitigated by educating peers about the scientific nature of the discipline and by clarifying expectations early in the collaboration.</p>
+</section>
+<section id="institutionalizing-research-practices" class="level2">
+<h2 class="anchored" data-anchor-id="institutionalizing-research-practices">Institutionalizing Research Practices</h2>
+<p>Because data science is fundamentally research-oriented, it benefits from structures that support long-term inquiry:</p>
+<ul>
+<li><strong>Hypothesis management systems</strong> (e.g., Jira boards for research questions)</li>
+<li><strong>Documentation and reproducibility standards</strong></li>
+<li><strong>Knowledge repositories</strong> for storing validated insights</li>
+<li><strong>Reading groups and peer review</strong> to build shared epistemology</li>
+<li><strong>Metrics frameworks</strong> that evolve with product understanding</li>
+</ul>
+<p>These structures are difficult to maintain in organizations that treat data science as a service role rather than a core research discipline. But without them, data scientists spend too much time rediscovering known facts, fighting for prioritization, or maintaining dashboards instead of doing science.</p>
+</section>
+<section id="leadership-and-career-development" class="level2">
+<h2 class="anchored" data-anchor-id="leadership-and-career-development">Leadership and Career Development</h2>
+<p>Data science leadership differs from engineering or product leadership. Good data science managers:</p>
+<ul>
+<li>Advocate for scientific integrity over organizational convenience</li>
+<li>Create environments where critical thinking and skepticism are rewarded</li>
+<li>Invest in mentorship, research infrastructure, and knowledge management</li>
+<li>Protect time for exploration and open-ended investigations</li>
+</ul>
+<p>Career ladders for data scientists should also reflect the dual technical-and-scientific nature of the role. Promotions should reward not just technical skills or number of projects delivered, but also clarity of thought, epistemic rigor, and contributions to collective understanding.</p>
+</section>
+<section id="conclusion-science-inside-the-system" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-science-inside-the-system">Conclusion: Science Inside the System</h2>
+<p>Data science belongs in technology organizations as the internal scientific arm. Just as a hardware company employs physicists and chemists, and a biotech company employs biologists and statisticians, a software company should employ data scientists to understand the behavior of its systems.</p>
+<p>But for this function to work, the organization must recognize that data science is not just a set of tools, nor a dashboard factory, nor a subset of software engineering. It is a scientific discipline embedded in a socio-technical environment. It needs room to think, tools to investigate, and colleagues who understand its purpose.</p>
+<p>Placed correctly, data science can reveal the system to itself—and help shape more intelligent, resilient, and adaptive technology.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -729,7 +819,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/data-science-in-orgs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/data-science-in-orgs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

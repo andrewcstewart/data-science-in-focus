@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/venn-diagram.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
+  <a href="../chapters/venn-data-science.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -256,8 +256,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#why-project-management-fails-for-data-science" id="toc-why-project-management-fails-for-data-science" class="nav-link active" data-scroll-target="#why-project-management-fails-for-data-science">Why Project Management Fails for Data Science</a></li>
+  <li><a href="#what-is-a-research-program" id="toc-what-is-a-research-program" class="nav-link" data-scroll-target="#what-is-a-research-program">What Is a Research Program?</a></li>
+  <li><a href="#how-the-research-lifecycle-aligns" id="toc-how-the-research-lifecycle-aligns" class="nav-link" data-scroll-target="#how-the-research-lifecycle-aligns">How the Research Lifecycle Aligns</a></li>
+  <li><a href="#progressive-elaboration-and-knowledge-memory" id="toc-progressive-elaboration-and-knowledge-memory" class="nav-link" data-scroll-target="#progressive-elaboration-and-knowledge-memory">Progressive Elaboration and Knowledge Memory</a></li>
+  <li><a href="#evaluating-programs-without-fixed-deliverables" id="toc-evaluating-programs-without-fixed-deliverables" class="nav-link" data-scroll-target="#evaluating-programs-without-fixed-deliverables">Evaluating Programs Without Fixed Deliverables</a></li>
+  <li><a href="#reducing-context-switching-through-program-cohesion" id="toc-reducing-context-switching-through-program-cohesion" class="nav-link" data-scroll-target="#reducing-context-switching-through-program-cohesion">Reducing Context Switching Through Program Cohesion</a></li>
+  <li><a href="#program-hierarchy-and-organizational-mapping" id="toc-program-hierarchy-and-organizational-mapping" class="nav-link" data-scroll-target="#program-hierarchy-and-organizational-mapping">Program Hierarchy and Organizational Mapping</a></li>
+  <li><a href="#documentation-as-infrastructure" id="toc-documentation-as-infrastructure" class="nav-link" data-scroll-target="#documentation-as-infrastructure">Documentation as Infrastructure</a></li>
+  <li><a href="#collaboration-across-teams" id="toc-collaboration-across-teams" class="nav-link" data-scroll-target="#collaboration-across-teams">Collaboration Across Teams</a></li>
+  <li><a href="#insulating-programs-from-operational-churn" id="toc-insulating-programs-from-operational-churn" class="nav-link" data-scroll-target="#insulating-programs-from-operational-churn">Insulating Programs from Operational Churn</a></li>
+  <li><a href="#guarding-against-research-theater" id="toc-guarding-against-research-theater" class="nav-link" data-scroll-target="#guarding-against-research-theater">Guarding Against “Research Theater”</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/research-programs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -281,9 +299,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>(Differentiating research from projects; long-term, iterative, institutional memory.)</p>
+<section id="why-project-management-fails-for-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="why-project-management-fails-for-data-science">Why Project Management Fails for Data Science</h2>
+<p>Data science defies traditional project management paradigms. While engineering is often structured around delivery timelines and dependency tracking, data science requires an environment conducive to inquiry, failure, and refinement of hypotheses. Managing this domain through short-term sprints or rigid milestone charts can distort its nature, incentivizing superficial wins and discouraging exploration. The more suitable alternative is to manage data science through long-term, open-ended research programs.</p>
+</section>
+<section id="what-is-a-research-program" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-research-program">What Is a Research Program?</h2>
+<p>A research program is not merely a renamed roadmap. It is a structured approach to exploring a related class of questions under a shared intellectual objective. The boundary of the program is permeable and evolves as knowledge accumulates. Like an academic research lab, it supports inquiry across multiple threads while maintaining cohesion.</p>
+<p>Imre Lakatos developed the idea of scientific research programs as a model for understanding how science progresses—not through isolated experiments but through evolving, structured commitments to a set of theories and methodologies that adapt over time <span class="citation" data-cites="lakatos1970falsification">(<a href="#ref-lakatos1970falsification" role="doc-biblioref"><strong>lakatos1970falsification?</strong></a>)</span>.</p>
+</section>
+<section id="how-the-research-lifecycle-aligns" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-research-lifecycle-aligns">How the Research Lifecycle Aligns</h2>
+<p>A typical data science lifecycle begins with an intuition—often from a stakeholder—that a pattern might exist. The scientist explores, quantifies, models, and validates that intuition. At each step, new paths emerge. Traditional project management treats those forks as failures to plan. Research programs treat them as natural and necessary shifts in understanding.</p>
+<p>Organizing work into programs allows data science teams to behave more like scientific research labs. A program might focus on “Buyer Elasticity” and include pricing models, segmentation strategies, and simulations. Another might address “Content Personalization,” from engagement modeling to fairness evaluations. The goal is not just output, but insight.</p>
+</section>
+<section id="progressive-elaboration-and-knowledge-memory" class="level2">
+<h2 class="anchored" data-anchor-id="progressive-elaboration-and-knowledge-memory">Progressive Elaboration and Knowledge Memory</h2>
+<p>Programs support what philosophers call <em>progressive elaboration</em>—the sharpening of questions and accumulation of explanatory power over time. As the program matures, it builds a memory: of hypotheses tested, approaches discarded, and models refined. This memory is vital to avoid repeating dead ends and helps onboard new team members with context and momentum.</p>
+<p>This process echoes the cumulative vision of data science described by Donoho, who calls for systems that support replicability, distribution of knowledge, and shared intellectual infrastructure <span class="citation" data-cites="donoho201750">(<a href="#ref-donoho201750" role="doc-biblioref"><strong>donoho201750?</strong></a>)</span>.</p>
+</section>
+<section id="evaluating-programs-without-fixed-deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="evaluating-programs-without-fixed-deliverables">Evaluating Programs Without Fixed Deliverables</h2>
+<p>Because research programs resist fixed timelines, they require alternative evaluations. Metrics like research <em>velocity</em>—number of hypotheses tested, models iterated, or experiments run—are one approach. <em>Influence</em> is another: did the program change product direction, stakeholder thinking, or team understanding?</p>
+<p>Intermediate artifacts become key deliverables: decision memos, validated notebooks, and model cards. These should be as rigorous as papers, even if they don’t follow a peer-review path. Internal publication models, versioned with Git and written in reproducible Markdown/Quarto formats, serve this purpose well.</p>
+</section>
+<section id="reducing-context-switching-through-program-cohesion" class="level2">
+<h2 class="anchored" data-anchor-id="reducing-context-switching-through-program-cohesion">Reducing Context Switching Through Program Cohesion</h2>
+<p>Programs reduce context switching. Instead of jumping across unrelated Jira tickets—e.g., churn analysis, attribution modeling, and experimental design—scientists focus on a coherent domain. They reuse code, deepen subject-matter understanding, and evolve hypotheses longitudinally.</p>
+<p>The cost of context switching is real: degraded focus, fragmented knowledge, and lower reproducibility. This principle is well-recognized in cognitive psychology and productivity science.</p>
+</section>
+<section id="program-hierarchy-and-organizational-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="program-hierarchy-and-organizational-mapping">Program Hierarchy and Organizational Mapping</h2>
+<p>At an organizational level, three to six programs may be enough to reflect major strategic themes. Within each, workstreams—like mini research projects—can be scoped, prioritized, and retired dynamically. This structure aligns resourcing, reporting, and planning to substantive areas of progress.</p>
+<p>Netflix’s approach exemplifies this: it treats applied research as a continuous investment area, with alignment between research programs and long-term product vision <span class="citation" data-cites="amatriain2016netflix">(<a href="#ref-amatriain2016netflix" role="doc-biblioref"><strong>amatriain2016netflix?</strong></a>)</span>.</p>
+</section>
+<section id="documentation-as-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-as-infrastructure">Documentation as Infrastructure</h2>
+<p>Each research program should maintain a “program brief,” continuously updated and version-controlled. It includes:</p>
+<ul>
+<li>Primary questions and hypotheses</li>
+<li>Current and planned investigations</li>
+<li>Links to code, dashboards, and past results</li>
+<li>Open questions and knowledge gaps</li>
+</ul>
+<p>These briefs function like evolving lab notebooks, protecting against knowledge loss and enabling internal peer review.</p>
+</section>
+<section id="collaboration-across-teams" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration-across-teams">Collaboration Across Teams</h2>
+<p>Programs create opportunities for cross-team collaboration. Two teams in different parts of the org working on, say, “forecasting under uncertainty,” can contribute to the same program, align on shared metrics, and exchange tools and findings. This model echoes academic research, where labs co-publish or share data infrastructures.</p>
+<p>Such sharing builds a culture of transparency and open inquiry, and encourages code standardization, statistical rigor, and institutional learning.</p>
+</section>
+<section id="insulating-programs-from-operational-churn" class="level2">
+<h2 class="anchored" data-anchor-id="insulating-programs-from-operational-churn">Insulating Programs from Operational Churn</h2>
+<p>For research programs to flourish, they need time and insulation. This doesn’t mean detachment from business reality—it means permission to follow the scientific process without being pulled into every reactive business ask. Without this protection, teams become reactive rather than generative.</p>
+<p>Leadership must recognize that most valuable insights come not from short-term optimization but from sustained programs that allow deep model understanding and system-level exploration.</p>
+</section>
+<section id="guarding-against-research-theater" class="level2">
+<h2 class="anchored" data-anchor-id="guarding-against-research-theater">Guarding Against “Research Theater”</h2>
+<p>Not all programs are equal. There is always a risk of “research theater”—where teams simulate inquiry without rigor, producing dashboards or papers that are never used or validated.</p>
+<p>A good program is grounded in real-world systems. It engages with stakeholders but holds scientific standards: falsifiability, reproducibility, and relevance. It treats failure as informative and values insight over deliverables. The scientist is not a ticket-taker but an epistemic agent advancing the organization’s understanding.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Managing data science through research programs reflects the epistemological reality of the work. It aligns with the scientific method, supports cumulative progress, and empowers researchers to engage deeply with their domains. Programs turn data science from a reactive function into a durable engine of discovery.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -723,7 +807,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/research-programs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/research-programs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

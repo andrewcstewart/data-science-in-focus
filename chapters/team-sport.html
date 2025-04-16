@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -101,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/venn-diagram.html"><strong>The Data Scientists</strong></a></li><li class="breadcrumb-item"><a href="../chapters/team-sport.html"><span class="chapter-title">Data Science as a Team Sport</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/venn-data-science.html"><strong>The Data Scientists</strong></a></li><li class="breadcrumb-item"><a href="../chapters/team-sport.html"><span class="chapter-title">Data Science as a Team Sport</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -173,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/venn-diagram.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
+  <a href="../chapters/venn-data-science.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Refined Venn Diagram of Data Science</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -256,13 +276,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-lone-wolf-myth" id="toc-the-lone-wolf-myth" class="nav-link active" data-scroll-target="#the-lone-wolf-myth">The Lone Wolf Myth</a></li>
+  <li><a href="#roles-and-structure" id="toc-roles-and-structure" class="nav-link" data-scroll-target="#roles-and-structure">Roles and Structure</a></li>
+  <li><a href="#collaboration-and-coordination" id="toc-collaboration-and-coordination" class="nav-link" data-scroll-target="#collaboration-and-coordination">Collaboration and Coordination</a></li>
+  <li><a href="#research-programs-and-culture" id="toc-research-programs-and-culture" class="nav-link" data-scroll-target="#research-programs-and-culture">Research Programs and Culture</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/team-sport.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/venn-diagram.html"><strong>The Data Scientists</strong></a></li><li class="breadcrumb-item"><a href="../chapters/team-sport.html"><span class="chapter-title">Data Science as a Team Sport</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/venn-data-science.html"><strong>The Data Scientists</strong></a></li><li class="breadcrumb-item"><a href="../chapters/team-sport.html"><span class="chapter-title">Data Science as a Team Sport</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">Data Science as a Team Sport</span></h1>
 </div>
@@ -281,9 +311,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>(Organizing scientists into labs with complementary strengths across the venn.)</p>
+<section id="the-lone-wolf-myth" class="level2">
+<h2 class="anchored" data-anchor-id="the-lone-wolf-myth">The Lone Wolf Myth</h2>
+<p>The myth of the solitary data scientist is stubborn. The image of a lone genius hacking away at a notebook, conjuring insights from the abyss, still lingers in corporate lore and even in many hiring pipelines. But if you scratch the surface of real, functioning data science orgs—especially those that consistently deliver impact—you’ll find something quite different: collaborative research labs <span class="citation" data-cites="passi2018problem">(<a href="#ref-passi2018problem" role="doc-biblioref"><strong>passi2018problem?</strong></a>)</span>.</p>
+<p>Data science, at its core, is a collective enterprise. Its most productive form resembles the structure of a scientific research lab or an academic department, with a diversity of skills distributed across complementary team members. Each brings domain knowledge, statistical thinking, systems intuition, or engineering rigor to bear on the same fundamental goal: understanding and improving a complex system through evidence and iteration.</p>
+</section>
+<section id="roles-and-structure" class="level2">
+<h2 class="anchored" data-anchor-id="roles-and-structure">Roles and Structure</h2>
+<p>This framing runs counter to the way many companies think about “staffing” data science. Job descriptions often conflate incompatible expectations: the ideal candidate should design experiments, write Spark jobs, build dashboards, deploy models, wrangle stakeholders, and explain confidence intervals—all while maintaining a sunny disposition. It’s not surprising that hiring mismatches are common and team morale can suffer <span class="citation" data-cites="donoho2017fifty">(<a href="#ref-donoho2017fifty" role="doc-biblioref">Donoho 2017</a>)</span>.</p>
+<p>Instead of looking for mythical unicorns, organizations should adopt a team-based model that recognizes data science as a research discipline. This model emphasizes specialization within a collaborative framework, in which roles are clearly defined, but outcomes are shared. A good analogy is the surgical team or film crew: you wouldn’t expect the lighting director to write the script or the anesthesiologist to scrub in on post-op paperwork. But they all contribute to the success of the operation—or the story.</p>
+<p>A practical data science team might include statistical modelers, data engineers, domain experts, and research leads. Some teams also include embedded analysts or product liaisons who maintain close contact with business stakeholders. These roles are not rigid, but the distinction helps avoid two common dysfunctions: underpowered modeling and overengineered pipelines.</p>
+</section>
+<section id="collaboration-and-coordination" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration-and-coordination">Collaboration and Coordination</h2>
+<p>In a mature data science lab, project work is scoped collaboratively, but tasks are distributed according to strengths. Engineers design reliable data flows, analysts validate assumptions and communicate results, and scientists iterate on models or experiments. These activities are coordinated not by top-down command but by shared research goals, with regular design reviews and cross-functional critique <span class="citation" data-cites="lewis2020team">(<a href="#ref-lewis2020team" role="doc-biblioref"><strong>lewis2020team?</strong></a>)</span>.</p>
+<p>Documentation, hypothesis logs, and design rationale are all critical in this setting. The lab model works best when intermediate progress is legible and reproducible. This makes the work reviewable, enables debugging, and allows knowledge to persist beyond the original researchers. It also makes onboarding easier and lets newcomers quickly contribute.</p>
+<p>Importantly, a data science lab is not a “service desk” for other teams. It’s not there to produce dashboards on request or answer one-off data questions. While analysts may occasionally do this kind of work, the lab’s primary function is research: to pose and test hypotheses, evaluate mechanisms, and identify causes, tradeoffs, and opportunities. These insights feed into strategy, product development, or operational policy <span class="citation" data-cites="bailer2018data">(<a href="#ref-bailer2018data" role="doc-biblioref"><strong>bailer2018data?</strong></a>)</span>.</p>
+</section>
+<section id="research-programs-and-culture" class="level2">
+<h2 class="anchored" data-anchor-id="research-programs-and-culture">Research Programs and Culture</h2>
+<p>When structured properly, labs can organize themselves around subject matter areas rather than functional roles. For example, one lab might specialize in growth and customer acquisition, while another focuses on payments and fraud. This encourages both domain depth and methodological cross-pollination. Labs build expertise not only in their systems, but in the kinds of modeling, experimentation, and metrics most applicable to those systems.</p>
+<p>Career development also benefits from this model. Junior data scientists can apprentice under experienced leads, contributing to real research projects while building their skills. Mid-level team members can rotate between labs or serve as methodological leads. The presence of mentors and a research ethos increases both satisfaction and retention <span class="citation" data-cites="willingham2021cultivating">(<a href="#ref-willingham2021cultivating" role="doc-biblioref"><strong>willingham2021cultivating?</strong></a>)</span>.</p>
+<p>Even leadership changes in nature under this model. Instead of a flat analytics org reporting into product or engineering, the lab model supports a Director of Data Science who acts more like a Principal Investigator (PI) in a research institution. This leader sets vision, recruits talent, defines research programs, and secures institutional buy-in for long-term exploration.</p>
+<p>The lab approach also makes room for genuine innovation. Because teams are not bound to narrow scopes or ticket-based workflows, they have space to explore unexpected questions, follow anomalous results, and develop novel methods. Some of the best insights in data science come from chasing curiosities that at first seem like outliers <span class="citation" data-cites="breiman2001statistical">(<a href="#ref-breiman2001statistical" role="doc-biblioref">Breiman 2001</a>)</span>.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This isn’t to say that structure and accountability disappear. On the contrary, lab work should be organized around well-scoped research programs with clear deliverables, hypotheses, and evaluation criteria. But unlike project-based models, where scientists are often roving utility players, the lab model promotes stability, continuity, and intellectual ownership.</p>
+<p>There’s also a cultural dimension. Labs foster a norm of critique and reflection, of shared intellectual responsibility. A failed experiment is not a personal failure—it’s a data point. A surprising result is not a reason for dismissal—it’s an opportunity for inquiry. When this culture is strong, even setbacks advance the team’s understanding.</p>
+<p>Finally, the lab model connects better to the broader scientific tradition. It encourages rigorous reasoning, documentation, and collaborative discovery. It situates data science not as a niche tech function, but as part of a centuries-old tradition of knowledge generation through structured inquiry <span class="citation" data-cites="peng2011reproducible">(<a href="#ref-peng2011reproducible" role="doc-biblioref"><strong>peng2011reproducible?</strong></a>)</span>.</p>
+<p>In the end, data science isn’t a solo sport. It’s a team sport. And the better we design our teams—not just in composition but in mission, structure, and culture—the more likely we are to build organizations that learn, adapt, and thrive.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-breiman2001statistical" class="csl-entry" role="listitem">
+Breiman, Leo. 2001. <span>“Statistical Modeling: The Two Cultures (with Comments and a Rejoinder by the Author).”</span> <em>Statistical Science</em> 16 (3): 199–231.
+</div>
+<div id="ref-donoho2017fifty" class="csl-entry" role="listitem">
+Donoho, David. 2017. <span>“50 Years of Data Science.”</span> <em>Journal of Computational and Graphical Statistics</em> 26 (4): 745–66.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -723,7 +791,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/team-sport.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewcstewart/data-science-in-focus/edit/main/chapters/team-sport.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewcstewart/data-science-in-focus/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
