@@ -1,3 +1,52 @@
-# Using the Capability Maturity Model in Data Science
+---
+title: "Using the Capability Maturity Model in Data Science"
+format: html
+bibliography: references.bib
+---
 
-(Applying the CMM to assess and scaffold experimentation and system design.)
+In many organizations, data science initiatives begin with enthusiasm but lack structured frameworks to assess or guide their evolution. The Capability Maturity Model (CMM), originally developed to evaluate software development processes, offers a powerful lens for assessing the maturity of data science practices. By adapting the CMM to data science, teams can better understand where they are, where they could go, and what steps are required to grow from ad hoc experimentation to rigorous, institutionalized innovation.
+
+## From Software to Science: A Rationale
+
+The CMM was introduced by the Software Engineering Institute to assess the process maturity of software organizations, guiding them from chaotic, hero-driven development to optimized, quantitative refinement of practices (Paulk et al., 1993). Despite its origin in software, the staged model of maturity maps well onto data science because both are process-heavy disciplines that demand rigor, repeatability, and quality control.
+
+## Stages of Maturity in Data Science
+
+An adapted CMM for data science typically includes five stages:
+
+1. **Initial (Ad hoc)** – Efforts are unstructured, success is person-dependent, and reproducibility is rare.
+2. **Repeatable** – Some basic processes are reused (e.g., standard SQL queries, common scripts), but documentation and metrics are inconsistent.
+3. **Defined** – Processes are documented and standardized across teams. Models are versioned, reviewed, and tied to business objectives.
+4. **Managed** – Quantitative metrics guide model performance, experimentation, and business impact. Experiment tracking and reproducibility are central.
+5. **Optimizing** – The organization continuously refines practices using feedback loops, automated retraining, and post-deployment monitoring.
+
+These stages build progressively on each other, but in practice, different aspects of a team (e.g., modeling vs. data engineering) may reside at different maturity levels simultaneously.
+
+## Diagnosing Maturity
+
+Assessing data science maturity involves identifying key dimensions such as:
+
+- **Experimentation discipline**: How rigorously are hypotheses defined and validated?
+- **Model lifecycle management**: Are models reproducible, versioned, and monitored?
+- **Knowledge retention**: Are results documented, shared, and used to inform future work?
+- **Integration with product development**: Are models tied to measurable business outcomes?
+
+A diagnostic framework across these axes can expose inconsistencies and help prioritize improvements.
+
+## Practical Applications
+
+Teams at the lower stages often focus on local wins—delivering one-off analyses or models without long-term sustainability. However, maturity shifts the focus toward *institutional learning*—transforming one-off experiments into robust systems. For instance, implementing standardized experiment tracking (e.g., with MLflow or Weights & Biases) can move a team from Stage 2 to Stage 3 by enabling replicability and peer review (Zaharia et al., 2018).
+
+At higher levels, maturity enables organizations to treat data science as a platform capability. Mature organizations invest in internal research programs, internal tooling, and shared knowledge repositories. At Stage 5, the organization continuously improves its research productivity and decision-making precision through rigorous feedback cycles and automation (Furterer, 2009).
+
+## Maturity as Leverage for Leadership
+
+Executives often demand business impact, yet data science teams may struggle to translate their work into such terms. A maturity model provides language to frame conversations not just around outcomes, but capabilities: “We’re not yet at a stage where we can deliver real-time uplift estimates because our model monitoring infrastructure is still at Stage 2.”
+
+This framing turns a capability gap into an investment roadmap, positioning data science as a strategic function, not a service desk. It also makes success legible across organizational boundaries by highlighting process improvements in addition to model results.
+
+## Conclusion
+
+Using a Capability Maturity Model framework allows data science leaders to chart a realistic progression from chaos to optimization. It encourages structured growth, supports strategic investment, and anchors scientific curiosity in process discipline. As the field matures, such frameworks may become essential not only for managing teams, but for managing trust in data-driven decisions themselves.
+
+## References
