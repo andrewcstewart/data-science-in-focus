@@ -1,3 +1,47 @@
-# Data Science as a Team Sport
+---
+title: "Data Science as a Team Sport"
+format: html
+bibliography: references.bib
+---
 
-(Organizing scientists into labs with complementary strengths across the venn.)
+## The Lone Wolf Myth
+
+The myth of the solitary data scientist is stubborn. The image of a lone genius hacking away at a notebook, conjuring insights from the abyss, still lingers in corporate lore and even in many hiring pipelines. But if you scratch the surface of real, functioning data science orgs—especially those that consistently deliver impact—you’ll find something quite different: collaborative research labs [@passi2018problem].
+
+Data science, at its core, is a collective enterprise. Its most productive form resembles the structure of a scientific research lab or an academic department, with a diversity of skills distributed across complementary team members. Each brings domain knowledge, statistical thinking, systems intuition, or engineering rigor to bear on the same fundamental goal: understanding and improving a complex system through evidence and iteration.
+
+## Roles and Structure
+
+This framing runs counter to the way many companies think about "staffing" data science. Job descriptions often conflate incompatible expectations: the ideal candidate should design experiments, write Spark jobs, build dashboards, deploy models, wrangle stakeholders, and explain confidence intervals—all while maintaining a sunny disposition. It’s not surprising that hiring mismatches are common and team morale can suffer [@donoho2017fifty].
+
+Instead of looking for mythical unicorns, organizations should adopt a team-based model that recognizes data science as a research discipline. This model emphasizes specialization within a collaborative framework, in which roles are clearly defined, but outcomes are shared. A good analogy is the surgical team or film crew: you wouldn’t expect the lighting director to write the script or the anesthesiologist to scrub in on post-op paperwork. But they all contribute to the success of the operation—or the story.
+
+A practical data science team might include statistical modelers, data engineers, domain experts, and research leads. Some teams also include embedded analysts or product liaisons who maintain close contact with business stakeholders. These roles are not rigid, but the distinction helps avoid two common dysfunctions: underpowered modeling and overengineered pipelines.
+
+## Collaboration and Coordination
+
+In a mature data science lab, project work is scoped collaboratively, but tasks are distributed according to strengths. Engineers design reliable data flows, analysts validate assumptions and communicate results, and scientists iterate on models or experiments. These activities are coordinated not by top-down command but by shared research goals, with regular design reviews and cross-functional critique [@lewis2020team].
+
+Documentation, hypothesis logs, and design rationale are all critical in this setting. The lab model works best when intermediate progress is legible and reproducible. This makes the work reviewable, enables debugging, and allows knowledge to persist beyond the original researchers. It also makes onboarding easier and lets newcomers quickly contribute.
+
+Importantly, a data science lab is not a "service desk" for other teams. It’s not there to produce dashboards on request or answer one-off data questions. While analysts may occasionally do this kind of work, the lab's primary function is research: to pose and test hypotheses, evaluate mechanisms, and identify causes, tradeoffs, and opportunities. These insights feed into strategy, product development, or operational policy [@bailer2018data].
+
+## Research Programs and Culture
+
+When structured properly, labs can organize themselves around subject matter areas rather than functional roles. For example, one lab might specialize in growth and customer acquisition, while another focuses on payments and fraud. This encourages both domain depth and methodological cross-pollination. Labs build expertise not only in their systems, but in the kinds of modeling, experimentation, and metrics most applicable to those systems.
+
+Career development also benefits from this model. Junior data scientists can apprentice under experienced leads, contributing to real research projects while building their skills. Mid-level team members can rotate between labs or serve as methodological leads. The presence of mentors and a research ethos increases both satisfaction and retention [@willingham2021cultivating].
+
+Even leadership changes in nature under this model. Instead of a flat analytics org reporting into product or engineering, the lab model supports a Director of Data Science who acts more like a Principal Investigator (PI) in a research institution. This leader sets vision, recruits talent, defines research programs, and secures institutional buy-in for long-term exploration.
+
+The lab approach also makes room for genuine innovation. Because teams are not bound to narrow scopes or ticket-based workflows, they have space to explore unexpected questions, follow anomalous results, and develop novel methods. Some of the best insights in data science come from chasing curiosities that at first seem like outliers [@breiman2001statistical].
+
+## Conclusion
+
+This isn’t to say that structure and accountability disappear. On the contrary, lab work should be organized around well-scoped research programs with clear deliverables, hypotheses, and evaluation criteria. But unlike project-based models, where scientists are often roving utility players, the lab model promotes stability, continuity, and intellectual ownership.
+
+There’s also a cultural dimension. Labs foster a norm of critique and reflection, of shared intellectual responsibility. A failed experiment is not a personal failure—it’s a data point. A surprising result is not a reason for dismissal—it’s an opportunity for inquiry. When this culture is strong, even setbacks advance the team's understanding.
+
+Finally, the lab model connects better to the broader scientific tradition. It encourages rigorous reasoning, documentation, and collaborative discovery. It situates data science not as a niche tech function, but as part of a centuries-old tradition of knowledge generation through structured inquiry [@peng2011reproducible].
+
+In the end, data science isn’t a solo sport. It’s a team sport. And the better we design our teams—not just in composition but in mission, structure, and culture—the more likely we are to build organizations that learn, adapt, and thrive.

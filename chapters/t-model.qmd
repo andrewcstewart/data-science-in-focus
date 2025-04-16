@@ -1,17 +1,87 @@
-# The T-Model of Skill Development
+---
+title: "The T-Model of Skill Development"
+format: html
+bibliography: references.bib
+---
 
-Data scientists develop along a T-shaped trajectory:  
-- The **horizontal bar** represents breadth—exposure to tools, methods, and adjacent domains.  
-- The **vertical bar** represents depth—specialization in one or more areas like causal inference, simulation, or optimization.
+The "T-Model" is one of the most enduring metaphors in the discussion of data science skill development. It illustrates a profile that combines both breadth and depth: a wide range of general competencies across domains (the top of the "T"), and deep expertise in at least one of them (the vertical stem). In data science, this structure is essential—not only for individual effectiveness but for the coherence and flexibility of data science teams.
 
-This model supports differentiated roles:  
-- A generalist might help design broad research programs.  
-- A specialist might focus on methodological innovation or platform-level modeling.
+What makes the T-Model especially relevant in data science is the fundamentally interdisciplinary nature of the field. A successful data scientist is not just a statistician or a programmer or a domain expert, but someone capable of navigating all three domains with fluency. However, few individuals can be deep experts in all dimensions simultaneously. The T-Model helps resolve this tension.
 
-Title tracks should reflect this diversity. Rather than forcing all scientists into a “full-stack” mold, orgs can recognize distinct paths:  
-- Researcher  
-- Methodologist  
-- Domain expert  
-- Tool-builder
+## Horizontal Breadth
 
-This structure also helps build effective teams—ones that combine varied skill sets across the disciplinary landscape.
+The horizontal portion of the T represents broad foundational knowledge. For data scientists, this means a working familiarity with:
+
+- **Statistics and probability**: Understanding distributions, inference, experimental design, and uncertainty quantification.
+- **Programming and software engineering**: Ability to write modular, testable, maintainable code; familiarity with data structures and algorithms.
+- **Databases and data infrastructure**: Proficiency in querying data (typically via SQL), understanding of schemas, indexing, and performance concerns.
+- **Machine learning**: Conceptual fluency with modeling techniques like regression, classification, clustering, and more complex architectures.
+- **Domain knowledge**: Understanding the context in which data is collected, used, and interpreted.
+
+This breadth allows data scientists to collaborate across disciplines and adapt their thinking to a wide range of problems. It makes them credible interlocutors to engineers, PMs, business stakeholders, and researchers alike.
+
+## Vertical Depth
+
+The vertical stroke of the T represents depth in a particular area. This could be:
+
+- Deep mathematical knowledge in statistical theory or Bayesian modeling
+- Advanced software engineering skills (e.g., building ML infrastructure, production-grade pipelines)
+- Specialized knowledge in a scientific or business domain (e.g., genomics, e-commerce, NLP, or ad tech)
+- Deep understanding of causal inference or experimental methodology
+- Fluency with specific tools or paradigms (e.g., probabilistic programming, time-series forecasting, graph analytics)
+
+This depth enables the data scientist to innovate, create new techniques, or drive insight in a way that generalists cannot. It anchors their credibility and allows them to lead or mentor in that area.
+
+## The Team-Level T
+
+The T-Model is not just a personal development guide—it’s also a team design principle. In a well-composed data science team, each member may have a different area of vertical depth, but all members share a common language across the horizontal breadth.
+
+This means that teams can share mental models, communicate clearly, and collaborate fluidly—even if their expertise differs. It also means that problems can be transferred or handed off between team members more easily, avoiding knowledge silos.
+
+## T-Model and Hiring
+
+When hiring data scientists, companies often fall into the trap of searching for “unicorns” who are deep experts in everything. This is rarely realistic. Instead, hiring should aim to fill out the collective T-shape of the team. A team with redundant verticals but no breadth won’t collaborate well; a team with breadth but no depth will lack edge.
+
+A good hiring strategy identifies what verticals the team currently lacks, and which areas of breadth need strengthening. Junior hires might be broader generalists; senior hires may be expected to bring vertical depth.
+
+## T-Model vs. π-Model
+
+In some discussions, especially when extending from data science into broader fields like design or product, people use the **π-model**—a profile with two verticals rather than one. In data science, this could reflect deep strength in both statistical modeling and software engineering, or in both machine learning and domain expertise.
+
+However, the π-model is better understood as a refinement of the T. It’s helpful to recognize when someone has dual specialties, but still assumes a wide base of general competence. The goal is not to stack verticals indiscriminately, but to cultivate synergy.
+
+## Learning Pathways
+
+The T-Model also guides self-development. Early-career data scientists should prioritize building out the horizontal bar—acquiring fluency across the stack, learning best practices in programming, solidifying statistical fundamentals, and becoming literate in ML workflows.
+
+As one gains experience, the next step is to pursue vertical specialization. This might happen organically—by diving deeper into problems one encounters at work—or deliberately, through graduate study or focused personal projects.
+
+What matters is not just learning in isolation, but applying that skill in practical, high-impact ways. The stem of the T is carved not by study alone, but by challenge, feedback, and iteration.
+
+## Pitfalls of Over-Specialization
+
+There is a risk that depth in one area can lead to overconfidence, or a loss of collaborative flexibility. A data scientist who is deeply skilled in modeling but cannot explain results to stakeholders—or who cannot adapt models to practical constraints—risks becoming siloed.
+
+The T-Model reminds us that depth must be built upon a foundation of breadth. Expert knowledge becomes valuable only when it is actionable in context.
+
+## Organizational Design Implications
+
+Teams built around T-shaped individuals tend to be more resilient. They can shift responsibilities during turnover, adapt to changes in the tech stack or company priorities, and support mutual learning. A team full of deep specialists without shared language will fracture; a team full of generalists may stagnate.
+
+T-shaped teams also support career growth. Junior members can learn by pairing with seniors in their verticals; seniors benefit from the questions and perspective that juniors bring across the horizontal.
+
+## Beyond the T
+
+Some authors propose extensions to the T: the **comb-shaped** model (many shallow or moderate verticals), or the **E-shaped** model (breadth, depth, and experience in execution). These are useful elaborations, but they share the same core insight: collaboration requires common ground; expertise requires depth.
+
+The T-Model is enduring because it’s simple, flexible, and true. It doesn’t prescribe what kind of data scientist one must be—it offers a structure for thinking about how to grow and how to build.
+
+## Diagram
+
+```{=html}
+<svg viewBox="0 0 200 200" width="300" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="20" x2="180" y2="20" stroke="black" stroke-width="6"/>
+  <line x1="100" y1="20" x2="100" y2="180" stroke="black" stroke-width="6"/>
+  <text x="10" y="15" font-size="10">Breadth: Stats, Coding, ML, Infra, Domain</text>
+  <text x="105" y="100" font-size="10" transform="rotate(90, 105, 100)">Depth: Specialization</text>
+</svg>
