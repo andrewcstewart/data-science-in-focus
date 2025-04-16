@@ -1,3 +1,46 @@
-# The Scientific Method in Data Science
+---
+title: "The Scientific Method in Data Science"
+format: html
+bibliography: references.bib
+description: "Understanding the scientific method as the core process driving data science inquiry."
+---
 
-(Hypothesis-driven study design, using Jira and other tools to support structured inquiry.)
+# The Method Is the Discipline
+
+The scientific method isn't just a metaphor for how data science works — it is the method. If data science is to remain science and not drift into analytics theater, the discipline must center itself on systematic hypothesis testing, error analysis, and the incremental refinement of understanding. Models, dashboards, and even causal inference pipelines are tools. The method is the process.
+
+At its core, the scientific method is an iterative loop that begins with observations, forms hypotheses, tests those hypotheses with data, and refines those ideas in light of the results. This framework, ancient in origin but modern in its rigor, enables the accumulation of reliable knowledge in the face of uncertainty and noise — the very conditions of production data [@popper2002logic; @gelman2013bayesian].
+
+# Against the Ticket Queue
+
+In most tech organizations, however, this process is implicitly degraded. Business stakeholders prefer answers to questions, and models to uncertainty. Data scientists are frequently pushed into a service model: pull the data, run the regression, answer the ticket. But such a mode of operation short-circuits the fundamental value proposition of science — not to produce answers per se, but to generate validated knowledge [@wilson2014best].
+
+To realign with the scientific method, data science teams must reconceptualize their work as research programs rather than ticket queues. This means developing research questions, designing hypothesis-driven experiments, and documenting outcomes, whether confirming or null. It also means resisting the allure of spurious correlations, post-hoc rationalization, and aesthetic dashboards with no inferential content [@beaulieu2020data].
+
+# Hypothesis Stories in Practice
+
+One practical entry point is the introduction of hypothesis stories — a lightweight narrative form that frames any analysis as a falsifiable test. A hypothesis story includes: (1) the intuition or anomaly prompting inquiry, (2) the operational hypothesis to be tested, (3) the method for testing it, and (4) the expected implications of each possible outcome. It's a format that brings both rigor and clarity, and it can be embedded directly in a team's workflow.
+
+Tools like Jira and Notion can be reappropriated for this purpose. Instead of task cards, each analysis ticket becomes a living experiment write-up. The story evolves as data is collected, tested, and interpreted. This approach preserves the continuity of thought across weeks or months of work and allows others to trace the intellectual lineage of decisions made.
+
+# Accumulating Knowledge
+
+The output of this process should be cumulative. Data science, like any scientific discipline, depends on a shared corpus of knowledge. Each completed hypothesis story, once validated, becomes a building block — a finding that can be cited, revisited, or contradicted. Teams should maintain an internal knowledge repository, akin to a lab notebook, in which these results are captured and synthesized [@leek2017opinion].
+
+Such a shift is cultural, not just procedural. It demands that leadership reward clarity over certainty, and depth over speed. It requires that product managers and analysts align on framing questions, not just interpreting results. And it implies that models are not the final output, but instruments of a broader research agenda [@passi2020problem].
+
+# Embracing Imperfection
+
+Of course, the rigor of science cannot be absolute in a commercial setting. Time constraints, incomplete data, and organizational pressure all impinge on ideal practice. But that makes the scaffolding of the scientific method even more essential. It ensures that even when shortcuts are taken, they are acknowledged as such — and that findings are always framed in probabilistic, not deterministic, terms.
+
+One important ally here is Bayesian reasoning. The Bayesian framework formalizes belief updating, allowing teams to express uncertainty, incorporate prior knowledge, and revise expectations in light of new evidence. It maps cleanly onto the scientific method and can be a bridge between intuitive judgment and formal inference [@mcgrayne2011theory].
+
+Another helpful structure is the distinction between exploratory and confirmatory analysis. Exploratory work is generative and open-ended; it's where ideas are born. Confirmatory analysis tests those ideas against the harsh discipline of data. When the two are conflated — as they often are — findings become less reliable. Separating them maintains epistemic hygiene [@tukey1977exploratory].
+
+# A Smarter Team, Not a Slower One
+
+Critically, this orientation doesn't slow teams down. It makes them smarter. A team that operates with a scientific mindset iterates more effectively, avoids repeated mistakes, and builds organizational memory. It knows what it knows, and more importantly, it knows the limits of what it knows.
+
+In the long arc, this produces not just better models, but better understanding. And that, more than any one predictive output, is the lasting contribution of data science to the organization.
+
+> *"The aim of science is not to open the door to infinite wisdom, but to set a limit to infinite error."* — Bertolt Brecht (via *Galileo*)
