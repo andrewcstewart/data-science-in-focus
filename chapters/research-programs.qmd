@@ -1,3 +1,81 @@
-# Managing Data Science Through Research Programs
+---
+title: "Managing Data Science Through Research Programs"
+format: html
+bibliography: references.bib
+---
 
-(Differentiating research from projects; long-term, iterative, institutional memory.)
+## Why Project Management Fails for Data Science
+
+Data science defies traditional project management paradigms. While engineering is often structured around delivery timelines and dependency tracking, data science requires an environment conducive to inquiry, failure, and refinement of hypotheses. Managing this domain through short-term sprints or rigid milestone charts can distort its nature, incentivizing superficial wins and discouraging exploration. The more suitable alternative is to manage data science through long-term, open-ended research programs.
+
+## What Is a Research Program?
+
+A research program is not merely a renamed roadmap. It is a structured approach to exploring a related class of questions under a shared intellectual objective. The boundary of the program is permeable and evolves as knowledge accumulates. Like an academic research lab, it supports inquiry across multiple threads while maintaining cohesion.
+
+Imre Lakatos developed the idea of scientific research programs as a model for understanding how science progresses—not through isolated experiments but through evolving, structured commitments to a set of theories and methodologies that adapt over time [@lakatos1970falsification].
+
+## How the Research Lifecycle Aligns
+
+A typical data science lifecycle begins with an intuition—often from a stakeholder—that a pattern might exist. The scientist explores, quantifies, models, and validates that intuition. At each step, new paths emerge. Traditional project management treats those forks as failures to plan. Research programs treat them as natural and necessary shifts in understanding.
+
+Organizing work into programs allows data science teams to behave more like scientific research labs. A program might focus on “Buyer Elasticity” and include pricing models, segmentation strategies, and simulations. Another might address “Content Personalization,” from engagement modeling to fairness evaluations. The goal is not just output, but insight.
+
+## Progressive Elaboration and Knowledge Memory
+
+Programs support what philosophers call *progressive elaboration*—the sharpening of questions and accumulation of explanatory power over time. As the program matures, it builds a memory: of hypotheses tested, approaches discarded, and models refined. This memory is vital to avoid repeating dead ends and helps onboard new team members with context and momentum.
+
+This process echoes the cumulative vision of data science described by Donoho, who calls for systems that support replicability, distribution of knowledge, and shared intellectual infrastructure [@donoho201750].
+
+## Evaluating Programs Without Fixed Deliverables
+
+Because research programs resist fixed timelines, they require alternative evaluations. Metrics like research *velocity*—number of hypotheses tested, models iterated, or experiments run—are one approach. *Influence* is another: did the program change product direction, stakeholder thinking, or team understanding?
+
+Intermediate artifacts become key deliverables: decision memos, validated notebooks, and model cards. These should be as rigorous as papers, even if they don’t follow a peer-review path. Internal publication models, versioned with Git and written in reproducible Markdown/Quarto formats, serve this purpose well.
+
+## Reducing Context Switching Through Program Cohesion
+
+Programs reduce context switching. Instead of jumping across unrelated Jira tickets—e.g., churn analysis, attribution modeling, and experimental design—scientists focus on a coherent domain. They reuse code, deepen subject-matter understanding, and evolve hypotheses longitudinally.
+
+The cost of context switching is real: degraded focus, fragmented knowledge, and lower reproducibility. This principle is well-recognized in cognitive psychology and productivity science.
+
+## Program Hierarchy and Organizational Mapping
+
+At an organizational level, three to six programs may be enough to reflect major strategic themes. Within each, workstreams—like mini research projects—can be scoped, prioritized, and retired dynamically. This structure aligns resourcing, reporting, and planning to substantive areas of progress.
+
+Netflix’s approach exemplifies this: it treats applied research as a continuous investment area, with alignment between research programs and long-term product vision [@amatriain2016netflix].
+
+## Documentation as Infrastructure
+
+Each research program should maintain a “program brief,” continuously updated and version-controlled. It includes:
+
+- Primary questions and hypotheses
+- Current and planned investigations
+- Links to code, dashboards, and past results
+- Open questions and knowledge gaps
+
+These briefs function like evolving lab notebooks, protecting against knowledge loss and enabling internal peer review.
+
+## Collaboration Across Teams
+
+Programs create opportunities for cross-team collaboration. Two teams in different parts of the org working on, say, "forecasting under uncertainty," can contribute to the same program, align on shared metrics, and exchange tools and findings. This model echoes academic research, where labs co-publish or share data infrastructures.
+
+Such sharing builds a culture of transparency and open inquiry, and encourages code standardization, statistical rigor, and institutional learning.
+
+## Insulating Programs from Operational Churn
+
+For research programs to flourish, they need time and insulation. This doesn’t mean detachment from business reality—it means permission to follow the scientific process without being pulled into every reactive business ask. Without this protection, teams become reactive rather than generative.
+
+Leadership must recognize that most valuable insights come not from short-term optimization but from sustained programs that allow deep model understanding and system-level exploration.
+
+## Guarding Against “Research Theater”
+
+Not all programs are equal. There is always a risk of "research theater"—where teams simulate inquiry without rigor, producing dashboards or papers that are never used or validated.
+
+A good program is grounded in real-world systems. It engages with stakeholders but holds scientific standards: falsifiability, reproducibility, and relevance. It treats failure as informative and values insight over deliverables. The scientist is not a ticket-taker but an epistemic agent advancing the organization’s understanding.
+
+## Conclusion
+
+Managing data science through research programs reflects the epistemological reality of the work. It aligns with the scientific method, supports cumulative progress, and empowers researchers to engage deeply with their domains. Programs turn data science from a reactive function into a durable engine of discovery.
+
+## References
+
