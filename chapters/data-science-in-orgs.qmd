@@ -1,12 +1,92 @@
-# Where Data Science Fits in Technology Organizations
+---
+title: "Where Data Science Fits in Technology Organizations"
+format: html
+---
 
-Data science occupies a unique niche within technology orgs. It bridges engineering, product, and strategy—but it is fundamentally distinct from all three. Its core deliverable is understanding, not execution.
+Data science is often misunderstood within the context of a modern technology company. While it shares similarities with software engineering, product analytics, and business intelligence, it is a distinct discipline with its own methods, goals, and organizational implications. To understand where data science belongs in a technology organization, we must understand what data science is and what kinds of work it produces. Only then can we structure teams and collaborations that let it thrive.
 
-The organizational structure of data science varies:  
-- **Centralized teams** emphasize consistency and shared standards.  
-- **Embedded models** prioritize domain intimacy and responsiveness.  
-- **Hybrid approaches** attempt to balance autonomy and alignment.
+## What Data Science Does — and Doesn’t — Do
 
-Tensions often arise when data science is treated as a service function, expected to deliver dashboards or one-off analyses on demand. But a scientific function thrives on longer-term research questions, context-rich collaboration, and space to explore uncertainty. Successful teams recognize this and give data scientists both embedded partnerships and protected research capacity.
+Data science is the application of the scientific method to understanding how systems behave. It is not a subfield of engineering. Nor is it just about making dashboards or building models. The core activity of data science is generating *knowledge*: explanations, predictions, hypotheses, theories, and evaluations about system behavior. These systems might be algorithms, business processes, user journeys, or product mechanisms. The output of a data science function is therefore scientific in nature: insights, frameworks, metrics, hypotheses, validated learnings.
 
-The most effective data science orgs invest in career ladders, program-based workstreams, and a clear cultural distinction between scientists and engineers—while encouraging tight collaboration across them.
+By contrast, engineering teams are focused on *building* systems—software infrastructure, production algorithms, and user-facing features. Product teams are focused on *developing* systems—coordinating cross-functional work toward business objectives. Data science supports both, but its perspective is observational and interpretive rather than directive or generative. This distinction is essential.
+
+## Functional vs. Matrixed vs. Embedded Models
+
+Where data science lives organizationally depends on how an organization balances centralization with specialization. There are three major models:
+
+- **Functional Model**: All data scientists report to a centralized data science org. They may work on a range of projects across departments, with shared standards and a common leadership structure.
+- **Embedded Model**: Data scientists report into the department or team they support (e.g., marketing, product, engineering), often leading to deeper integration but more fragmentation across the discipline.
+- **Matrixed/Hybrid Model**: Data scientists report into a central data science org but are functionally embedded in teams across the company, typically with dotted-line relationships to those teams.
+
+Each model has tradeoffs. Functional models promote strong peer support and shared practices but risk becoming disconnected from day-to-day product or business concerns. Embedded models encourage alignment with team priorities but often isolate data scientists and dilute standards. Matrixed models attempt to capture the best of both worlds but require clear role definitions and dual-accountability structures to succeed.
+
+## Data Science’s Role in the Product Lifecycle
+
+At a high-performing company, data science contributes throughout the product lifecycle:
+
+- **Exploration & Ideation**: framing the problem space, sizing opportunities, identifying behavioral patterns, proposing hypotheses
+- **Design & Planning**: defining metrics, estimating baselines, setting targets, designing experiments
+- **Implementation & Launch**: building telemetry, supporting A/B tests, validating assumptions in real time
+- **Monitoring & Evaluation**: analyzing outcomes, contextualizing results, diagnosing regressions, proposing next steps
+
+Note that these contributions are not about shipping code or setting strategy. Instead, they help *inform* decision-making with a scientific perspective. This is true whether the project is product-facing, algorithmic, operational, or strategic. The data scientist is there to ask, “What do we know? How do we know it? What would change our belief?”
+
+## Data Science vs. Data Engineering vs. Analytics
+
+Data science is often confused with related fields. Here’s a rough breakdown:
+
+- **Data Engineering**: builds pipelines, platforms, and infrastructure to make data accessible, reliable, and usable
+- **Analytics / BI**: creates dashboards, reports, and KPIs to monitor and summarize key business or product metrics
+- **Data Science**: investigates causality, uncertainty, and emergent behavior in systems using statistical and computational methods
+
+These roles are complementary. In some companies, one person might wear multiple hats. But for mature teams, clarity between these roles helps assign responsibility appropriately and encourages the development of specialized methods and tools.
+
+## Organizational Allies and Tensions
+
+Data scientists work across boundaries. Their natural collaborators include:
+
+- **Engineers** (for instrumentation, telemetry, model integration)
+- **Product Managers** (for hypothesis framing, decision-making support)
+- **Designers** (for behavioral studies, experiment design)
+- **Executives** (for forecasting, scenario analysis, strategy testing)
+- **Operations** (for workflow optimizations and root cause analysis)
+
+However, tensions may arise when stakeholders expect deliverables that fall outside the scientific function of data science. For example:
+
+- When engineers expect production-ready code
+- When PMs expect decisions rather than probabilistic evidence
+- When leadership expects dashboards rather than research
+
+These misalignments can be mitigated by educating peers about the scientific nature of the discipline and by clarifying expectations early in the collaboration.
+
+## Institutionalizing Research Practices
+
+Because data science is fundamentally research-oriented, it benefits from structures that support long-term inquiry:
+
+- **Hypothesis management systems** (e.g., Jira boards for research questions)
+- **Documentation and reproducibility standards**
+- **Knowledge repositories** for storing validated insights
+- **Reading groups and peer review** to build shared epistemology
+- **Metrics frameworks** that evolve with product understanding
+
+These structures are difficult to maintain in organizations that treat data science as a service role rather than a core research discipline. But without them, data scientists spend too much time rediscovering known facts, fighting for prioritization, or maintaining dashboards instead of doing science.
+
+## Leadership and Career Development
+
+Data science leadership differs from engineering or product leadership. Good data science managers:
+
+- Advocate for scientific integrity over organizational convenience
+- Create environments where critical thinking and skepticism are rewarded
+- Invest in mentorship, research infrastructure, and knowledge management
+- Protect time for exploration and open-ended investigations
+
+Career ladders for data scientists should also reflect the dual technical-and-scientific nature of the role. Promotions should reward not just technical skills or number of projects delivered, but also clarity of thought, epistemic rigor, and contributions to collective understanding.
+
+## Conclusion: Science Inside the System
+
+Data science belongs in technology organizations as the internal scientific arm. Just as a hardware company employs physicists and chemists, and a biotech company employs biologists and statisticians, a software company should employ data scientists to understand the behavior of its systems.
+
+But for this function to work, the organization must recognize that data science is not just a set of tools, nor a dashboard factory, nor a subset of software engineering. It is a scientific discipline embedded in a socio-technical environment. It needs room to think, tools to investigate, and colleagues who understand its purpose.
+
+Placed correctly, data science can reveal the system to itself—and help shape more intelligent, resilient, and adaptive technology.
