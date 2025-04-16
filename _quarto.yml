@@ -43,7 +43,7 @@ book:
 
     - part: "**The Data Scientists**"
       chapters:
-        - chapters/venn-diagram.qmd
+        - chapters/venn-data-science.qmd
         - chapters/t-model.qmd
         - chapters/team-sport.qmd
 
@@ -62,7 +62,7 @@ book:
       chapters:
         - chapters/probability-inference.qmd
 
-bibliography: references.bib
+bibliography: chapters/references.bib
 
 format:
   html:
